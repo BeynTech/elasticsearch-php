@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace BeynElasticsearch\Endpoints;
 
 /**
  * Class Reindex
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Indices
  * @author   Augustin Husson <husson.augustin@gmail.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

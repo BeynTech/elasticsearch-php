@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace BeynElasticsearch\Namespaces;
 
 /**
  * Class NodesNamespace
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\NodesNamespace
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Namespaces\NodesNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -47,7 +47,7 @@ class NodesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Nodes\Stats $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Nodes\Stats $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Nodes\Stats');
         $endpoint->setNodeID($nodeID)
@@ -81,7 +81,7 @@ class NodesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Nodes\Usage $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Nodes\Usage $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Nodes\Usage');
         $endpoint->setNodeID($nodeID)->setMetric($metric);
@@ -114,7 +114,7 @@ class NodesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Nodes\Info $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Nodes\Info $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Nodes\Info');
         $endpoint->setNodeID($nodeID)->setMetric($metric);
@@ -149,7 +149,7 @@ class NodesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Nodes\HotThreads $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Nodes\HotThreads $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Nodes\HotThreads');
         $endpoint->setNodeID($nodeID);
@@ -179,7 +179,7 @@ class NodesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Nodes\ReloadSecureSettings $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Nodes\ReloadSecureSettings $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Nodes\ReloadSecureSettings');
         $endpoint->setNodeID($nodeID);

@@ -14,7 +14,7 @@
     <testsuites>
         <testsuite name="Tests">
             <directory>tests</directory>
-            <exclude>tests/Elasticsearch/Tests/YamlRunnerTest.php</exclude>
+            <exclude>tests/BeynElasticsearch/Tests/YamlRunnerTest.php</exclude>
         </testsuite>
     </testsuites>
     <filter>

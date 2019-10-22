@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Cat;
+namespace BeynElasticsearch\Endpoints\Cat;
 
-use Elasticsearch\Common\Exceptions\RuntimeException;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions\RuntimeException;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class Snapshots
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cat
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Cat
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

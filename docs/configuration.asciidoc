@@ -143,16 +143,16 @@ you can catch a specific curl exception then check if it wraps a MaxRetriesExcep
 
 [source,php]
 ----
-$client = Elasticsearch\ClientBuilder::create()
+$client = BeynElasticsearch\ClientBuilder::create()
     ->setHosts(["localhost:1"])
     ->setRetries(0)
     ->build();
 
 try {
     $client->search($searchParams);
-} catch (Elasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost $e) {
+} catch (BeynElasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost $e) {
     $previous = $e->getPrevious();
-    if ($previous instanceof 'Elasticsearch\Common\Exceptions\MaxRetriesException') {
+    if ($previous instanceof 'BeynElasticsearch\Common\Exceptions\MaxRetriesException') {
         echo "Max retries!";
     }
 }
@@ -164,16 +164,16 @@ check it's previous value:
 
 [source,php]
 ----
-$client = Elasticsearch\ClientBuilder::create()
+$client = BeynElasticsearch\ClientBuilder::create()
     ->setHosts(["localhost:1"])
     ->setRetries(0)
     ->build();
 
 try {
     $client->search($searchParams);
-} catch (Elasticsearch\Common\Exceptions\TransportException $e) {
+} catch (BeynElasticsearch\Common\Exceptions\TransportException $e) {
     $previous = $e->getPrevious();
-    if ($previous instanceof 'Elasticsearch\Common\Exceptions\MaxRetriesException') {
+    if ($previous instanceof 'BeynElasticsearch\Common\Exceptions\MaxRetriesException') {
         echo "Max retries!";
     }
 }
@@ -182,7 +182,7 @@ try {
 
 [[enabling_logger]]
 === Enabling the Logger
-Elasticsearch-PHP supports logging, but it is not enabled by default for performance reasons.  If you wish to enable logging,
+BeynElasticsearch-PHP supports logging, but it is not enabled by default for performance reasons.  If you wish to enable logging,
 you need to select a logging implementation, install it, then enable the logger in the Client.  The recommended logger
 is https://github.com/Seldaek/monolog[Monolog], but any logger that implements the `PSR/Log` interface will work.
 
@@ -224,7 +224,7 @@ $client = ClientBuilder::create()       // Instantiate a new ClientBuilder
 
 === Configure the HTTP Handler
 
-Elasticsearch-PHP uses an interchangeable HTTP transport layer called https://github.com/guzzle/RingPHP/[RingPHP].  This
+BeynElasticsearch-PHP uses an interchangeable HTTP transport layer called https://github.com/guzzle/RingPHP/[RingPHP].  This
 allows the client to construct a generic HTTP request, then pass it to the transport layer to execute.  The actual execution
 details are hidden from the client and modular, so that you can choose from several HTTP handlers depending on your needs.
 
@@ -262,7 +262,7 @@ Connection pools are configured via the `setConnectionPool()` method:
 
 [source,php]
 ----
-$connectionPool = '\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool';
+$connectionPool = '\BeynElasticsearch\ConnectionPool\StaticNoPingConnectionPool';
 $client = ClientBuilder::create()
             ->setConnectionPool($connectionPool)
             ->build();
@@ -279,7 +279,7 @@ via the `setSelector()` method:
 
 [source,php]
 ----
-$selector = '\Elasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector';
+$selector = '\BeynElasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector';
 $client = ClientBuilder::create()
             ->setSelector($selector)
             ->build();
@@ -291,7 +291,7 @@ For more details, please see the dedicated page on
 
 === Setting the Serializer
 
-Requests are given to the client in the form of associative arrays, but Elasticsearch expects JSON.  The Serializer's
+Requests are given to the client in the form of associative arrays, but BeynElasticsearch expects JSON.  The Serializer's
 job is to serialize PHP objects into JSON.  It also de-serializes JSON back into PHP arrays.  This seems trivial, but
 there are a few edgecases which make it useful for the serializer to remain modular.
 
@@ -300,7 +300,7 @@ it can be done via the `setSerializer()` method:
 
 [source,php]
 ----
-$serializer = '\Elasticsearch\Serializers\SmartSerializer';
+$serializer = '\BeynElasticsearch\Serializers\SmartSerializer';
 $client = ClientBuilder::create()
             ->setSerializer($serializer)
             ->build();
@@ -383,7 +383,7 @@ $newEndpoint = function ($class) use ($transport, $serializer) {
         return new MyProject\SuperSearch($transport);
     } else {
         // Default handler
-        $fullPath = '\\Elasticsearch\\Endpoints\\' . $class;
+        $fullPath = '\\BeynElasticsearch\\Endpoints\\' . $class;
         if ($class === 'Bulk' || $class === 'Msearch' || $class === 'MPercolate') {
             return new $fullPath($transport, $serializer);
         } else {
@@ -426,7 +426,7 @@ $client = ClientBuilder::fromConfig($params);
 
 Unknown parameters will throw an exception, to help the user find potential problems.
 If this behavior is not desired (e.g. you are using the hash for other purposes, and may have
-keys unrelated to the Elasticsearch client), you can set $quiet = true in fromConfig() to
+keys unrelated to the BeynElasticsearch client), you can set $quiet = true in fromConfig() to
 silence the exceptions.
 
 [source,php]

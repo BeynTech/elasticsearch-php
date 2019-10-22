@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\ConnectionPool;
+namespace BeynElasticsearch\ConnectionPool;
 
-use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionFactoryInterface;
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch\ConnectionPool\Selectors\SelectorInterface;
+use BeynElasticsearch\Connections\Connection;
+use BeynElasticsearch\Connections\ConnectionFactoryInterface;
+use BeynElasticsearch\Connections\ConnectionInterface;
 
 class SimpleConnectionPool extends AbstractConnectionPool implements ConnectionPoolInterface
 {

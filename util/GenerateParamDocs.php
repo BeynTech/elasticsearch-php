@@ -68,7 +68,7 @@ foreach ($files as $file) {
 function print_usage_msg(): void
 {
     printf("Usage: php %s <ES_VERSION>\n", basename(__FILE__));
-    printf("where <ES_VERSION> is the Elasticsearch version to check (e.g. 7.0.0)\n");
+    printf("where <ES_VERSION> is the BeynElasticsearch version to check (e.g. 7.0.0)\n");
 }
 
 function renderComment(array $json, string $endpoint): string

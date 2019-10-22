@@ -1,7 +1,7 @@
 [[installation]]
 == Installation
 
-Elasticsearch-php only has a three requirements that you need to worry about:
+BeynElasticsearch-php only has a three requirements that you need to worry about:
 
 * PHP 7.0.0 or higher
 * http://getcomposer.org[Composer]
@@ -13,20 +13,20 @@ The rest of the dependencies will automatically be downloaded and installed by C
 [NOTE]
 .Libcurl can be replaced
 ====
-The default HTTP handlers that ship with Elasticsearch-php require the PHP libcurl extension, but it is not technically
+The default HTTP handlers that ship with BeynElasticsearch-php require the PHP libcurl extension, but it is not technically
 required for the client to operate.  If you have a host that does not have libcurl installed, you can use an
 alternate HTTP handler based on PHP streams.  Performance _will_ suffer, as the libcurl extension is much faster
 ====
 
 === Version Matrix
 
-You need to match your version of Elasticsearch to the appropriate version of this library.
+You need to match your version of BeynElasticsearch to the appropriate version of this library.
 
-The master branch will always track Elasticsearch master, but it is not recommended to use `dev-master` in your production code.
+The master branch will always track BeynElasticsearch master, but it is not recommended to use `dev-master` in your production code.
 
 [width="40%",options="header",frame="topbot"]
 |============================
-|Elasticsearch Version | Elasticsearch-PHP Branch
+|BeynElasticsearch Version | BeynElasticsearch-PHP Branch
 | >= 7.0, < 8.0        | `7.0`
 | >= 6.6, <= 6.7       | `6.7.x`
 | >= 6.0, <= 6.5       | `6.5.c`
@@ -64,7 +64,7 @@ More information about http://getcomposer.org/[Composer can be found at their we
 --------------------------
 require 'vendor/autoload.php';
 
-$client = Elasticsearch\ClientBuilder::create()->build();
+$client = BeynElasticsearch\ClientBuilder::create()->build();
 --------------------------
 +
 Client instantiation is performed with a static helper function `create()`.  This creates a ClientBuilder object,
@@ -76,7 +76,7 @@ a `Client` object.  We'll discuss configuration more in the Configuration sectio
 You'll notice that the installation command specified `--no-dev`.  This prevents Composer
 from installing the various testing and development dependencies.  For average users, there
 is no need to install the test suite.  In particular, the development dependencies include
-a full copy of Elasticsearch so that tests can be run against the REST specifications.  This
+a full copy of BeynElasticsearch so that tests can be run against the REST specifications.  This
 is a rather large download for non-developers, hence the --no-dev flag
 
 If you wish to contribute to development of this library, just omit the `--no-dev` flag to

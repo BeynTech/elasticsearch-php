@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Cache;
+namespace BeynElasticsearch\Endpoints\Indices\Cache;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class Clear
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Cache
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Indices\Cache
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

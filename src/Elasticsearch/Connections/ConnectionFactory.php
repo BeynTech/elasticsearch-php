@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Connections;
+namespace BeynElasticsearch\Connections;
 
-use Elasticsearch\Serializers\SerializerInterface;
+use BeynElasticsearch\Serializers\SerializerInterface;
 use Psr\Log\LoggerInterface;
 
 /**
  * Class AbstractConnection
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Connections
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Connections
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

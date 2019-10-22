@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Cluster\Nodes;
+namespace BeynElasticsearch\Endpoints\Cluster\Nodes;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions\InvalidArgumentException;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class AbstractNodesEndpoint
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster\Nodes
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Cluster\Nodes
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

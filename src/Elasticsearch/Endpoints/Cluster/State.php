@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Cluster;
+namespace BeynElasticsearch\Endpoints\Cluster;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class State
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Cluster
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

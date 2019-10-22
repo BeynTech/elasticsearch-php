@@ -2,31 +2,31 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch;
+namespace BeynElasticsearch;
 
-use Elasticsearch\Common\Exceptions\BadMethodCallException;
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
-use Elasticsearch\Common\Exceptions\BadRequest400Exception;
-use Elasticsearch\Common\Exceptions\Missing404Exception;
-use Elasticsearch\Common\Exceptions\TransportException;
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Namespaces\AbstractNamespace;
-use Elasticsearch\Namespaces\CatNamespace;
-use Elasticsearch\Namespaces\ClusterNamespace;
-use Elasticsearch\Namespaces\IndicesNamespace;
-use Elasticsearch\Namespaces\IngestNamespace;
-use Elasticsearch\Namespaces\NamespaceBuilderInterface;
-use Elasticsearch\Namespaces\NodesNamespace;
-use Elasticsearch\Namespaces\SnapshotNamespace;
-use Elasticsearch\Namespaces\BooleanRequestWrapper;
-use Elasticsearch\Namespaces\TasksNamespace;
+use BeynElasticsearch\Common\Exceptions\BadMethodCallException;
+use BeynElasticsearch\Common\Exceptions\InvalidArgumentException;
+use BeynElasticsearch\Common\Exceptions\NoNodesAvailableException;
+use BeynElasticsearch\Common\Exceptions\BadRequest400Exception;
+use BeynElasticsearch\Common\Exceptions\Missing404Exception;
+use BeynElasticsearch\Common\Exceptions\TransportException;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Namespaces\AbstractNamespace;
+use BeynElasticsearch\Namespaces\CatNamespace;
+use BeynElasticsearch\Namespaces\ClusterNamespace;
+use BeynElasticsearch\Namespaces\IndicesNamespace;
+use BeynElasticsearch\Namespaces\IngestNamespace;
+use BeynElasticsearch\Namespaces\NamespaceBuilderInterface;
+use BeynElasticsearch\Namespaces\NodesNamespace;
+use BeynElasticsearch\Namespaces\SnapshotNamespace;
+use BeynElasticsearch\Namespaces\BooleanRequestWrapper;
+use BeynElasticsearch\Namespaces\TasksNamespace;
 
 /**
  * Class Client
  *
- * @category Elasticsearch
- * @package  Elasticsearch
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -126,7 +126,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Info $endpoint
+         * @var \BeynElasticsearch\Endpoints\Info $endpoint
          */
         $endpoint = $endpointBuilder('Info');
         $endpoint->setParams($params);
@@ -148,7 +148,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Ping $endpoint
+         * @var \BeynElasticsearch\Endpoints\Ping $endpoint
          */
         $endpoint = $endpointBuilder('Ping');
         $endpoint->setParams($params);
@@ -191,7 +191,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\RankEval $endpoint
+         * @var \BeynElasticsearch\Endpoints\RankEval $endpoint
          */
         $endpoint = $endpointBuilder('RankEval');
         $endpoint->setBody($body)
@@ -235,7 +235,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Get $endpoint
+         * @var \BeynElasticsearch\Endpoints\Get $endpoint
          */
         $endpoint = $endpointBuilder('Get');
         $endpoint->setID($id)
@@ -279,7 +279,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Get $endpoint
+         * @var \BeynElasticsearch\Endpoints\Get $endpoint
          */
         $endpoint = $endpointBuilder('Source\Get');
         $endpoint->setID($id)
@@ -325,7 +325,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Exists $endpoint
+         * @var \BeynElasticsearch\Endpoints\Exists $endpoint
          */
         $endpoint = $endpointBuilder('Source\Exists');
         $endpoint->setID($id)
@@ -371,7 +371,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Delete $endpoint
+         * @var \BeynElasticsearch\Endpoints\Delete $endpoint
          */
         $endpoint = $endpointBuilder('Delete');
         $endpoint->setID($id)
@@ -440,7 +440,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\DeleteByQuery $endpoint
+         * @var \BeynElasticsearch\Endpoints\DeleteByQuery $endpoint
          */
         $endpoint = $endpointBuilder('DeleteByQuery');
         $endpoint->setIndex($index)
@@ -472,7 +472,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\DeleteByQueryRethrottle $endpoint
+         * @var \BeynElasticsearch\Endpoints\DeleteByQueryRethrottle $endpoint
          */
         $endpoint = $endpointBuilder('DeleteByQueryRethrottle');
         $endpoint->setTaskId($taskId);
@@ -519,7 +519,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\Count $endpoint
+         * @var \BeynElasticsearch\Endpoints\Count $endpoint
          */
         $endpoint = $endpointBuilder('Count');
         $endpoint->setIndex($index)
@@ -567,7 +567,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\TermVectors $endpoint
+         * @var \BeynElasticsearch\Endpoints\TermVectors $endpoint
          */
         $endpoint = $endpointBuilder('TermVectors');
         $endpoint->setIndex($index)
@@ -615,7 +615,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-         * @var \Elasticsearch\Endpoints\MTermVectors $endpoint
+         * @var \BeynElasticsearch\Endpoints\MTermVectors $endpoint
          */
         $endpoint = $endpointBuilder('MTermVectors');
         $endpoint->setIndex($index)
@@ -662,7 +662,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Exists $endpoint
+        * @var \BeynElasticsearch\Endpoints\Exists $endpoint
         */
         $endpoint = $endpointBuilder('Exists');
         $endpoint->setID($id)
@@ -706,7 +706,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Mget $endpoint
+        * @var \BeynElasticsearch\Endpoints\Mget $endpoint
         */
         $endpoint = $endpointBuilder('Mget');
         $endpoint->setIndex($index)
@@ -748,7 +748,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Msearch $endpoint
+        * @var \BeynElasticsearch\Endpoints\Msearch $endpoint
         */
         $endpoint = $endpointBuilder('Msearch');
         $endpoint->setIndex($index)
@@ -788,7 +788,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\MsearchTemplate $endpoint
+        * @var \BeynElasticsearch\Endpoints\MsearchTemplate $endpoint
         */
         $endpoint = $endpointBuilder('MsearchTemplate');
         $endpoint->setIndex($index)
@@ -832,7 +832,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Create $endpoint
+        * @var \BeynElasticsearch\Endpoints\Create $endpoint
         */
         $endpoint = $endpointBuilder('Create');
         $endpoint->setID($id)
@@ -877,7 +877,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Bulk $endpoint
+        * @var \BeynElasticsearch\Endpoints\Bulk $endpoint
         */
         $endpoint = $endpointBuilder('Bulk');
         $endpoint->setIndex($index)
@@ -924,7 +924,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Index $endpoint
+        * @var \BeynElasticsearch\Endpoints\Index $endpoint
         */
         $endpoint = $endpointBuilder('Index');
         $endpoint->setID($id)
@@ -962,7 +962,7 @@ class Client
         */
         $endpointBuilder = $this->endpoints;
         /**
-        * @var \Elasticsearch\Endpoints\Reindex $endpoint
+        * @var \BeynElasticsearch\Endpoints\Reindex $endpoint
         */
         $endpoint = $endpointBuilder('Reindex');
         $endpoint->setBody($body);
@@ -991,7 +991,7 @@ class Client
         */
         $endpointBuilder = $this->endpoints;
         /**
-        * @var \Elasticsearch\Endpoints\ReindexRethrottle $endpoint
+        * @var \BeynElasticsearch\Endpoints\ReindexRethrottle $endpoint
         */
         $endpoint = $endpointBuilder('ReindexRethrottle');
         $endpoint->setTaskId($taskId);
@@ -1038,7 +1038,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Explain $endpoint
+        * @var \BeynElasticsearch\Endpoints\Explain $endpoint
         */
         $endpoint = $endpointBuilder('Explain');
         $endpoint->setID($id)
@@ -1116,7 +1116,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Search $endpoint
+        * @var \BeynElasticsearch\Endpoints\Search $endpoint
         */
         $endpoint = $endpointBuilder('Search');
         $endpoint->setIndex($index)
@@ -1154,7 +1154,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\SearchShards $endpoint
+        * @var \BeynElasticsearch\Endpoints\SearchShards $endpoint
         */
         $endpoint = $endpointBuilder('SearchShards');
         $endpoint->setIndex($index)
@@ -1201,7 +1201,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Search $endpoint
+        * @var \BeynElasticsearch\Endpoints\Search $endpoint
         */
         $endpoint = $endpointBuilder('SearchTemplate');
         $endpoint->setIndex($index)
@@ -1237,7 +1237,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Scroll $endpoint
+        * @var \BeynElasticsearch\Endpoints\Scroll $endpoint
         */
         $endpoint = $endpointBuilder('Scroll');
         $endpoint->setScrollId($scrollID)
@@ -1262,7 +1262,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\ScriptsPainlessExecute $endpoint
+        * @var \BeynElasticsearch\Endpoints\ScriptsPainlessExecute $endpoint
         */
         $endpoint = $endpointBuilder('ScriptsPainlessExecute');
         $endpoint->setBody($body);
@@ -1293,7 +1293,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\ClearScroll $endpoint
+        * @var \BeynElasticsearch\Endpoints\ClearScroll $endpoint
         */
         $endpoint = $endpointBuilder('ClearScroll');
         $endpoint->setScrollId($scrollID)
@@ -1340,7 +1340,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Update $endpoint
+        * @var \BeynElasticsearch\Endpoints\Update $endpoint
         */
         $endpoint = $endpointBuilder('Update');
         $endpoint->setID($id)
@@ -1410,7 +1410,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\UpdateByQuery $endpoint
+        * @var \BeynElasticsearch\Endpoints\UpdateByQuery $endpoint
         */
         $endpoint = $endpointBuilder('UpdateByQuery');
         $endpoint->setIndex($index)
@@ -1442,7 +1442,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\UpdateByQueryRethrottle $endpoint
+        * @var \BeynElasticsearch\Endpoints\UpdateByQueryRethrottle $endpoint
         */
         $endpoint = $endpointBuilder('UpdateByQueryRethrottle');
         $endpoint->setTaskId($taskId);
@@ -1472,7 +1472,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Script\Get $endpoint
+        * @var \BeynElasticsearch\Endpoints\Script\Get $endpoint
         */
         $endpoint = $endpointBuilder('Script\Get');
         $endpoint->setID($id);
@@ -1503,7 +1503,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Script\Delete $endpoint
+        * @var \BeynElasticsearch\Endpoints\Script\Delete $endpoint
         */
         $endpoint = $endpointBuilder('Script\Delete');
         $endpoint->setID($id);
@@ -1538,7 +1538,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Script\Put $endpoint
+        * @var \BeynElasticsearch\Endpoints\Script\Put $endpoint
         */
         $endpoint = $endpointBuilder('Script\Put');
         $endpoint->setID($id)
@@ -1563,7 +1563,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Template\Get $endpoint
+        * @var \BeynElasticsearch\Endpoints\Template\Get $endpoint
         */
         $endpoint = $endpointBuilder('Template\Get');
         $endpoint->setID($id);
@@ -1587,7 +1587,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\Template\Delete $endpoint
+        * @var \BeynElasticsearch\Endpoints\Template\Delete $endpoint
         */
         $endpoint = $endpointBuilder('Template\Delete');
         $endpoint->setID($id);
@@ -1621,7 +1621,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\FieldCaps $endpoint
+        * @var \BeynElasticsearch\Endpoints\FieldCaps $endpoint
         */
         $endpoint = $endpointBuilder('FieldCaps');
         $endpoint->setIndex($index)
@@ -1652,7 +1652,7 @@ class Client
         $endpointBuilder = $this->endpoints;
 
         /**
-        * @var \Elasticsearch\Endpoints\RenderSearchTemplate $endpoint
+        * @var \BeynElasticsearch\Endpoints\RenderSearchTemplate $endpoint
         */
         $endpoint = $endpointBuilder('RenderSearchTemplate');
         $endpoint->setBody($body)

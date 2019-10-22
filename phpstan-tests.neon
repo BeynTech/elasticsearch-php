@@ -3,12 +3,12 @@ parameters:
         - '#Mockery\\MockInterface::shouldReceive\(\)#'
         - '#Mockery\\MockInterface given#'
 
-        # because of \Elasticsearch\Tests\RegisteredNamespaceTest
-        - '#Call to an undefined method Elasticsearch\\Client::foo\(\)#'
-        - '#Call to an undefined method Elasticsearch\\Client::bar\(\)#'
+        # because of \BeynElasticsearch\Tests\RegisteredNamespaceTest
+        - '#Call to an undefined method BeynElasticsearch\\Client::foo\(\)#'
+        - '#Call to an undefined method BeynElasticsearch\\Client::bar\(\)#'
 
-        # because of \Elasticsearch\Tests\ClientBuilderTest
-        - '#expects Psr\\Log\\LoggerInterface, Elasticsearch\\Tests\\ClientBuilder\\DummyLogger given.$#'
+        # because of \BeynElasticsearch\Tests\ClientBuilderTest
+        - '#expects Psr\\Log\\LoggerInterface, BeynElasticsearch\\Tests\\ClientBuilder\\DummyLogger given.$#'
 
         # probably PHPStan issue, because it actually works https://3v4l.org/s3U2B
         - '#Argument of an invalid type array\|stdClass supplied for foreach, only iterables are supported#'

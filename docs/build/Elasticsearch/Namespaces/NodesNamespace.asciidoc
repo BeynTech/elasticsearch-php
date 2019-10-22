@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_NodesNamespace]]
-=== Elasticsearch\Namespaces\NodesNamespace
+[[BeynElasticsearch_Namespaces_NodesNamespace]]
+=== BeynElasticsearch\Namespaces\NodesNamespace
 
 
 
@@ -12,14 +12,14 @@ Class NodesNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_NodesNamespacestats_stats,`stats()`>>
-* <<Elasticsearch_Namespaces_NodesNamespaceinfo_info,`info()`>>
-* <<Elasticsearch_Namespaces_NodesNamespacehotThreads_hotThreads,`hotThreads()`>>
-* <<Elasticsearch_Namespaces_NodesNamespaceshutdown_shutdown,`shutdown()`>>
+* <<BeynElasticsearch_Namespaces_NodesNamespacestats_stats,`stats()`>>
+* <<BeynElasticsearch_Namespaces_NodesNamespaceinfo_info,`info()`>>
+* <<BeynElasticsearch_Namespaces_NodesNamespacehotThreads_hotThreads,`hotThreads()`>>
+* <<BeynElasticsearch_Namespaces_NodesNamespaceshutdown_shutdown,`shutdown()`>>
 
 
 
-[[Elasticsearch_Namespaces_NodesNamespacestats_stats]]
+[[BeynElasticsearch_Namespaces_NodesNamespacestats_stats]]
 .`stats()`
 ****
 [source,php]
@@ -37,7 +37,7 @@ $params['fields']        = (list) A comma-separated list of fields for `fielddat
        ['jvm']           = (boolean) Return information about the JVM
        ['network']       = (boolean) Return information about network
        ['os']            = (boolean) Return information about the operating system
-       ['process']       = (boolean) Return information about the Elasticsearch process
+       ['process']       = (boolean) Return information about the BeynElasticsearch process
        ['thread_pool']   = (boolean) Return information about the thread pool
        ['transport']     = (boolean) Return information about transport
        ['body']  = (array) Request body
@@ -54,7 +54,7 @@ $response = $client->nodes()->stats($params);
 
 
 
-[[Elasticsearch_Namespaces_NodesNamespaceinfo_info]]
+[[BeynElasticsearch_Namespaces_NodesNamespaceinfo_info]]
 .`info()`
 ****
 [source,php]
@@ -76,7 +76,7 @@ $response = $client->nodes()->info($params);
 
 
 
-[[Elasticsearch_Namespaces_NodesNamespacehotThreads_hotThreads]]
+[[BeynElasticsearch_Namespaces_NodesNamespacehotThreads_hotThreads]]
 .`hotThreads()`
 ****
 [source,php]
@@ -101,7 +101,7 @@ $response = $client->nodes()->hotThreads($params);
 
 
 
-[[Elasticsearch_Namespaces_NodesNamespaceshutdown_shutdown]]
+[[BeynElasticsearch_Namespaces_NodesNamespaceshutdown_shutdown]]
 .`shutdown()`
 ****
 [source,php]

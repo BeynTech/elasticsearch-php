@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\Endpoints;
+namespace BeynElasticsearch\Tests\Endpoints;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 class AbstractEndpointTest extends \PHPUnit\Framework\TestCase
 {
@@ -34,7 +34,7 @@ class AbstractEndpointTest extends \PHPUnit\Framework\TestCase
             ->method('getParamWhitelist')
             ->willReturn(['one', 'two']);
 
-        $this->expectException(\Elasticsearch\Common\Exceptions\UnexpectedValueException::class);
+        $this->expectException(\BeynElasticsearch\Common\Exceptions\UnexpectedValueException::class);
 
         $this->endpoint->setParams($params);
     }

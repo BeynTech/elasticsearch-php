@@ -2,19 +2,19 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\Helper\Iterators;
+namespace BeynElasticsearch\Tests\Helper\Iterators;
 
-use Elasticsearch\Client;
-use Elasticsearch\Helper\Iterators\SearchResponseIterator;
+use BeynElasticsearch\Client;
+use BeynElasticsearch\Helper\Iterators\SearchResponseIterator;
 use Mockery as m;
 
 /**
  * Class SearchResponseIteratorTest
  *
- * @package Elasticsearch\Tests\Helper\Iterators
+ * @package BeynElasticsearch\Tests\Helper\Iterators
  * @author  Arturo Mejia <arturo.mejia@kreatetechnology.com>
  * @license http://www.apache.org/licenses/LICENSE-2.0 Apache2
- * @link    http://Elasticsearch.org
+ * @link    http://BeynElasticsearch.org
  */
 class SearchResponseIteratorTest extends \PHPUnit\Framework\TestCase
 {

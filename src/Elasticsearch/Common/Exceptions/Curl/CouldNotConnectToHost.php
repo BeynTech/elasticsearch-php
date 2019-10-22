@@ -2,20 +2,20 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Common\Exceptions\Curl;
+namespace BeynElasticsearch\Common\Exceptions\Curl;
 
-use Elasticsearch\Common\Exceptions\ElasticsearchException;
-use Elasticsearch\Common\Exceptions\TransportException;
+use BeynElasticsearch\Common\Exceptions\BeynElasticsearchException;
+use BeynElasticsearch\Common\Exceptions\TransportException;
 
 /**
  * Class CouldNotConnectToHost
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions\Curl
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Common\Exceptions\Curl
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
  */
-class CouldNotConnectToHost extends TransportException implements ElasticsearchException
+class CouldNotConnectToHost extends TransportException implements BeynElasticsearchException
 {
 }

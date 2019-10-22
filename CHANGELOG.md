@@ -11,13 +11,13 @@
   
 ## Release 7.2.2
 
-- Reintroduced the optional parameter in `Elasticsearch\Namespaces\IndicesNamespace::getAliases()`.
+- Reintroduced the optional parameter in `BeynElasticsearch\Namespaces\IndicesNamespace::getAliases()`.
   This fixes the BC break introduced in 7.2.0 and 7.2.1.
   [#947](https://github.com/elastic/elasticsearch-php/pull/)
 
 ## Release 7.2.1
 
-- Reintroduced `Elasticsearch\Namespaces\IndicesNamespace::getAliases()` as proxy
+- Reintroduced `BeynElasticsearch\Namespaces\IndicesNamespace::getAliases()` as proxy
   to `IndicesNamespace::getAlias()` to prevent BC breaks. The `getAliases()` is
   marked as deprecated and it will be removed from `elasticsearch-php 8.0`
   [#943](https://github.com/elastic/elasticsearch-php/pull/943)
@@ -29,7 +29,7 @@
 
 # Release 7.2.0
 
-- Updated the API endpoints for working with Elasticsearch 7.2.0:
+- Updated the API endpoints for working with BeynElasticsearch 7.2.0:
     - added `wait_for_active_shards` parameter to `indices.close` API;
     - added `expand_wildcards` parameter to `cluster.health` API;
     - added include_unloaded_segments`, `expand_wildcards`, `forbid_closed_indices`
@@ -48,12 +48,12 @@
 
 - Fixed `ClientBuilder::setSSLVerification()` to accept string or boolean
   [#917](https://github.com/elastic/elasticsearch-php/pull/917)
-- Fix type hinting for `setBody` in `Elasticsearch\Endpoints\Ingest\Pipeline\Put`
+- Fix type hinting for `setBody` in `BeynElasticsearch\Endpoints\Ingest\Pipeline\Put`
   [#913](https://github.com/elastic/elasticsearch-php/pull/913)
 
 ## Release 7.1.0
 
-- Added warning log for Elasticsearch response containing the `Warning` header
+- Added warning log for BeynElasticsearch response containing the `Warning` header
   [#911](https://github.com/elastic/elasticsearch-php/pull/911)
 - Fixed #838 hosting company is blocking ports because of `YamlRunnerTest.php`
   [#844](https://github.com/elastic/elasticsearch-php/pull/844)
@@ -72,7 +72,7 @@
 
 ### Docs
 
-- Documentation updated for Elasticsearch 7
+- Documentation updated for BeynElasticsearch 7
   [#904](https://github.com/elastic/elasticsearch-php/pull/904)
 
 ## Release 7.0.2
@@ -93,10 +93,10 @@
   [#897](https://github.com/elastic/elasticsearch-php/pull/897)
 - Update vendor libraries (PHPUnit 7.5, Symfony YAML 4.3, etc)
   [#897](https://github.com/elastic/elasticsearch-php/pull/897)
-- Updated all the API endpoints using the [latest 7.0.0 specs](https://github.com/elastic/elasticsearch/tree/v7.0.0/rest-api-spec/src/main/resources/rest-api-spec/api) of Elasticsearch [#897](https://github.com/elastic/elasticsearch-php/pull/897)
+- Updated all the API endpoints using the [latest 7.0.0 specs](https://github.com/elastic/elasticsearch/tree/v7.0.0/rest-api-spec/src/main/resources/rest-api-spec/api) of BeynElasticsearch [#897](https://github.com/elastic/elasticsearch-php/pull/897)
 - Added the `User-Agent` in each HTTP request [#898](https://github.com/elastic/elasticsearch-php/pull/898)
 - Simplified the logging methods `logRequestFail($request, $response, $exception)`
-  and `logRequestSuccess($request, $response)` in `Elasticsearch\Connections\Connection`
+  and `logRequestSuccess($request, $response)` in `BeynElasticsearch\Connections\Connection`
   [#876](https://github.com/elastic/elasticsearch-php/pull/876)
 - Fix `json_encode` for unicode(emoji) characters [856](https://github.com/elastic/elasticsearch-php/pull/856)
 - Fix HTTP port specification using CURLOPT_PORT, not anymore in the host [782](https://github.com/elastic/elasticsearch-php/pull/782)
@@ -250,7 +250,7 @@ Woo!
 - [TEST] build against ES 6 on Travis [[b5886a8]](http://github.com/elasticsearch/elasticsearch-php/commit/b5886a8)
 - [TEST] drop HHVM from build [#611] [[0a7b402]](http://github.com/elasticsearch/elasticsearch-php/commit/0a7b402)
 - [TEST] test tweaks to appease stricter types [[51f189e]](http://github.com/elasticsearch/elasticsearch-php/commit/51f189e)
-- Fix ClientBuilder - pass correct argument for Elasticsearch\Endpoints\MsearchTemplate::__construct. (#605) [[5f83b52]](http://github.com/elasticsearch/elasticsearch-php/commit/5f83b52)
+- Fix ClientBuilder - pass correct argument for BeynElasticsearch\Endpoints\MsearchTemplate::__construct. (#605) [[5f83b52]](http://github.com/elasticsearch/elasticsearch-php/commit/5f83b52)
 - [TEST] improve code quality of tests (#610) [[9ea2156]](http://github.com/elasticsearch/elasticsearch-php/commit/9ea2156)
 - [TEST] Support headers in yaml runner, do some bad-comment cleaning [[57b5489]](http://github.com/elasticsearch/elasticsearch-php/commit/57b5489)
 - [TEST] fix handling of format for Cat tests [[a24b7d1]](http://github.com/elasticsearch/elasticsearch-php/commit/a24b7d1)

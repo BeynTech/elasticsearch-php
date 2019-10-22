@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace BeynElasticsearch\Namespaces;
 
 /**
  * Class SnapshotNamespace
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\SnapshotNamespace
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Namespaces\SnapshotNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -41,7 +41,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Create $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Create $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Create');
         $endpoint->setRepository($repository)
@@ -77,7 +77,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Repository\Create $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Repository\Create $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Repository\Create');
         $endpoint->setRepository($repository)
@@ -110,7 +110,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Delete $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Delete $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Delete');
         $endpoint->setRepository($repository)
@@ -142,7 +142,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Repository\Delete $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Repository\Delete $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Repository\Delete');
         $endpoint->setRepository($repository)
@@ -176,7 +176,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Get $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Get');
         $endpoint->setRepository($repository)
@@ -208,7 +208,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Repository\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Repository\Get $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Repository\Get');
         $endpoint->setRepository($repository)
@@ -243,7 +243,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Restore $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Restore $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Restore');
         $endpoint->setRepository($repository)
@@ -278,7 +278,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Status $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Status $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Status');
         $endpoint->setRepository($repository)
@@ -310,7 +310,7 @@ class SnapshotNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Snapshot\Repository\Verify $endpoint
+ * @var \BeynElasticsearch\Endpoints\Snapshot\Repository\Verify $endpoint
 */
         $endpoint = $endpointBuilder('Snapshot\Repository\Verify');
         $endpoint->setRepository($repository)

@@ -1,7 +1,7 @@
 [[index_management]]
 == Index Management Operations
 
-Index management operations allow you to manage the indices in your Elasticsearch cluster, such as creating, deleting and
+Index management operations allow you to manage the indices in your BeynElasticsearch cluster, such as creating, deleting and
 updating indices and their mappings/settings.
 
 === Create an index
@@ -238,4 +238,4 @@ If you use an IDE with autocompletion, you should be able to easily explore the 
 ----
 $client->indices()->
 ----
-And perusing the list of available methods.  Alternatively, browsing the `\Elasticsearch\Namespaces\Indices.php` file will show you the full list of available method calls (as well as parameter lists in the comments for each method).
+And perusing the list of available methods.  Alternatively, browsing the `\BeynElasticsearch\Namespaces\Indices.php` file will show you the full list of available method calls (as well as parameter lists in the comments for each method).

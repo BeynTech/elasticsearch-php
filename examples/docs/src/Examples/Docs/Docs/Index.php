@@ -1,12 +1,12 @@
 <?php declare(strict_types = 1);
 
-// Licensed to Elasticsearch B.V under one or more agreements.
-// Elasticsearch B.V licenses this file to you under the Apache 2.0 License.
+// Licensed to BeynElasticsearch B.V under one or more agreements.
+// BeynElasticsearch B.V licenses this file to you under the Apache 2.0 License.
 // See the LICENSE file in the project root for more information
 
-namespace Elasticsearch\Examples\Docs\Docs;
+namespace BeynElasticsearch\Examples\Docs\Docs;
 
-use Elasticsearch\Examples\Docs\Testers\SimpleExamplesTester;
+use BeynElasticsearch\Examples\Docs\Testers\SimpleExamplesTester;
 
 /**
  *
@@ -15,7 +15,7 @@ use Elasticsearch\Examples\Docs\Testers\SimpleExamplesTester;
  * Date: 2019-08-05 08:49:19
  *
  * @source   docs/index_.asciidoc
- * @category Elasticsearch\Examples\Docs
+ * @category BeynElasticsearch\Examples\Docs
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
  *
@@ -37,7 +37,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
         ];
         $response = $client->index($params);
@@ -47,7 +47,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion
@@ -128,7 +128,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
             'op_type' => 'create',
         ];
@@ -139,7 +139,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion
@@ -160,7 +160,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
         ];
         $response = $client->create($params);
@@ -170,7 +170,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion
@@ -190,7 +190,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
         ];
         $response = $client->index($params);
@@ -200,7 +200,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion
@@ -220,7 +220,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
             'routing' => 'kimchy',
         ];
@@ -231,7 +231,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion
@@ -252,7 +252,7 @@ class Index extends SimpleExamplesTester {
             'body'  => [
                 'user'      => 'kimchy',
                 'post_date' => '2009-11-15T14:12:12',
-                'message'   => 'trying out Elasticsearch',
+                'message'   => 'trying out BeynElasticsearch',
             ],
             'timeout' => '5m',
         ];
@@ -263,7 +263,7 @@ class Index extends SimpleExamplesTester {
               . '{'
               . '    "user" : "kimchy",'
               . '    "post_date" : "2009-11-15T14:12:12",'
-              . '    "message" : "trying out Elasticsearch"'
+              . '    "message" : "trying out BeynElasticsearch"'
               . '}';
 
         // TODO -- make assertion

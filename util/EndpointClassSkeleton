@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace BeynElasticsearch\Endpoints;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class :endpoint
  * File generated using util/GenerateEndpoints.php
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\:endpoint
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\:endpoint
  * @author   Enrico Zimuel <enrico.zimuel@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

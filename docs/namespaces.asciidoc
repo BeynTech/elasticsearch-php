@@ -3,7 +3,7 @@
 
 The client has a number of "namespaces", which generally expose administrative
 functionality.  The namespaces correspond to the various administrative endpoints
-in Elasticsearch.  This is a complete list of namespaces:
+in BeynElasticsearch.  This is a complete list of namespaces:
 
 
 [width="40%",options="header",frame="topbot"]

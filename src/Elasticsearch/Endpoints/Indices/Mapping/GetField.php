@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Mapping;
+namespace BeynElasticsearch\Endpoints\Indices\Mapping;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions;
 
 /**
  * Class GetField
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Mapping
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Indices\Mapping
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -42,7 +42,7 @@ class GetField extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \BeynElasticsearch\Common\Exceptions\RuntimeException
      */
     public function getURI(): string
     {

@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\ConnectionPool\Selectors;
+namespace BeynElasticsearch\ConnectionPool\Selectors;
 
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch\Connections\ConnectionInterface;
 
 /**
  * Class RandomSelector
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Connections\Selectors\RandomSelector
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Connections\Selectors\RandomSelector
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

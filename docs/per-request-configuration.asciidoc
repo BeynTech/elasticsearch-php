@@ -7,7 +7,7 @@ These are specified as part of the request associative array.
 
 === Request Identification
 
-You can enrich your requests against Elasticsearch with an identifier string, that allows you to discover this identifier
+You can enrich your requests against BeynElasticsearch with an identifier string, that allows you to discover this identifier
 in https://www.elastic.co/guide/en/elasticsearch/reference/7.4/logging.html#deprecation-logging[deprecation logs], to support you with
 https://www.elastic.co/guide/en/elasticsearch/reference/7.4/index-modules-slowlog.html#_identifying_search_slow_log_origin[identifying search slow log origin]
 or to help with https://www.elastic.co/guide/en/elasticsearch/reference/current/tasks.html#_identifying_running_tasks[identifying running tasks].
@@ -32,7 +32,7 @@ $response = $client->get($params);
 
 === Ignoring exceptions
 The library attempts to throw exceptions for common problems.  These exceptions match the HTTP response code provided
-by Elasticsearch.  For example, attempting to GET a nonexistent document will throw a `MissingDocument404Exception`.
+by BeynElasticsearch.  For example, attempting to GET a nonexistent document will throw a `MissingDocument404Exception`.
 
 Exceptions are a useful and consistent way to deal with problems like missing documents, syntax errors, version
 conflicts, etc.  But sometimes you want to deal with the response body rather than catch exceptions (often useful
@@ -40,7 +40,7 @@ in test suites).
 
 If you need that behavior, you can configure an `ignore` parameter.  This should be configured in the `client` parameter
 of the request array.  For example, this example will ignore the `MissingDocument404Exception`
-exception and instead return the JSON provided by Elasticsearch.
+exception and instead return the JSON provided by BeynElasticsearch.
 
 
 [source,php]
@@ -85,8 +85,8 @@ Since the client has no way of knowing what the exception response will contain,
 === Providing custom query parameters
 
 Sometimes you need to provide custom query params, such as authentication tokens for a third-party plugin or proxy.
-All query parameters are white-listed in Elasticsearch-php, which is to protect you from specifying a param which is
-not accepted by Elasticsearch.
+All query parameters are white-listed in BeynElasticsearch-php, which is to protect you from specifying a param which is
+not accepted by BeynElasticsearch.
 
 If you need custom parameters, you need to bypass this whitelisting mechanism.  To do so, add them to the `custom`
 parameter as an array of values:
@@ -98,7 +98,7 @@ $client = ClientBuilder::create()->build();
 $params = [
     'index'  => 'test',
     'id'     => 1,
-    'parent' => 'abc',              // white-listed Elasticsearch parameter
+    'parent' => 'abc',              // white-listed BeynElasticsearch parameter
     'client' => [
         'custom' => [
             'customToken' => 'abc', // user-defined, not white listed, not checked
@@ -245,12 +245,12 @@ to finish.
 If either timeout expires, curl will close the connection and return an error.  Both parameters should be specified
 in seconds.
 
-Note: client-side timeouts *do not* mean that Elasticsearch aborts the request.  Elasticsearch will continue executing
+Note: client-side timeouts *do not* mean that BeynElasticsearch aborts the request.  BeynElasticsearch will continue executing
 the request until it completes.  In the case of a slow query or bulk request, the operation will continue executing
 "in the background", unknown to your client.  If your client kills connections rapidly with a timeout, only to immediately
 execute another request, it is possible to swamp the server with many connections because there is no "back-pressure" on the
 client.  In these situations, you will see the appropriate threadpool queue growing in size, and may start receiving
-`EsRejectedExecutionException` exceptions from Elasticsearch when the queue finally reaches capacity.
+`EsRejectedExecutionException` exceptions from BeynElasticsearch when the queue finally reaches capacity.
 
 [source,php]
 ----

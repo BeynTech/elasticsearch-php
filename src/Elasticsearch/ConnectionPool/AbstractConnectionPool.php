@@ -2,18 +2,18 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\ConnectionPool;
+namespace BeynElasticsearch\ConnectionPool;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
-use Elasticsearch\Connections\ConnectionFactoryInterface;
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch\Common\Exceptions\InvalidArgumentException;
+use BeynElasticsearch\ConnectionPool\Selectors\SelectorInterface;
+use BeynElasticsearch\Connections\ConnectionFactoryInterface;
+use BeynElasticsearch\Connections\ConnectionInterface;
 
 /**
  * Class AbstractConnectionPool
  *
- * @category Elasticsearch
- * @package  Elasticsearch\ConnectionPool
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\ConnectionPool
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -47,7 +47,7 @@ abstract class AbstractConnectionPool implements ConnectionPoolInterface
     protected $connectionPoolParams;
 
     /**
-     * @var \Elasticsearch\Connections\ConnectionFactory
+     * @var \BeynElasticsearch\Connections\ConnectionFactory
      */
     protected $connectionFactory;
 

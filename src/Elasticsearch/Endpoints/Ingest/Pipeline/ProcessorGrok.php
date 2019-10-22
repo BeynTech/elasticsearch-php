@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Ingest\Pipeline;
+namespace BeynElasticsearch\Endpoints\Ingest\Pipeline;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class ProcessorGrok
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Ingest
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Ingest
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

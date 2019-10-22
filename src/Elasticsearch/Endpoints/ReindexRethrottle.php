@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace BeynElasticsearch\Endpoints;
 
-use Elasticsearch\Common\Exceptions\RuntimeException;
+use BeynElasticsearch\Common\Exceptions\RuntimeException;
 
 /**
  * Class Reindex
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints
  * @author   Enrico Zimuel <enrico.zimuel@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

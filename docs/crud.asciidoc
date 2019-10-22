@@ -1,11 +1,11 @@
 [[indexing_documents]]
 == Indexing Documents
 
-IMPORTANT: Please note that mapping types will disappear from Elasticsearch, read more https://www.elastic.co/guide/en/elasticsearch/reference/7.x/removal-of-types.html[here]. If you migrated types from Elasticsearch 6 to 7, you can address these with the `type` param.
+IMPORTANT: Please note that mapping types will disappear from BeynElasticsearch, read more https://www.elastic.co/guide/en/elasticsearch/reference/7.x/removal-of-types.html[here]. If you migrated types from BeynElasticsearch 6 to 7, you can address these with the `type` param.
 
-When you add documents to Elasticsearch, you index JSON documents.  This maps naturally to PHP associative arrays, since
-they can easily be encoded in JSON.  Therefore, in Elasticsearch-PHP you create and pass associative arrays to the client
-for indexing.  There are several methods of ingesting data into Elasticsearch, which we will cover here.
+When you add documents to BeynElasticsearch, you index JSON documents.  This maps naturally to PHP associative arrays, since
+they can easily be encoded in JSON.  Therefore, in BeynElasticsearch-PHP you create and pass associative arrays to the client
+for indexing.  There are several methods of ingesting data into BeynElasticsearch, which we will cover here.
 
 === Single document indexing
 
@@ -60,7 +60,7 @@ $response = $client->index($params);
 
 === Bulk Indexing
 
-Elasticsearch also supports bulk indexing of documents.  The bulk API expects JSON action/metadata pairs, separated by
+BeynElasticsearch also supports bulk indexing of documents.  The bulk API expects JSON action/metadata pairs, separated by
 newlines.  When constructing your documents in PHP, the process is similar.  You first create an action array object
 (e.g. `index` object), then you create a document body object.  This process repeats for all your documents.
 
@@ -128,7 +128,7 @@ if (!empty($params['body'])) {
 [[getting_documents]]
 == Getting Documents
 
-Elasticsearch provides realtime GETs of documents.  This means that as soon as the document has been indexed and your
+BeynElasticsearch provides realtime GETs of documents.  This means that as soon as the document has been indexed and your
 client receives an acknowledgement, you can immediately retrieve the document from any shard.  Get operations are
 performed by requesting a document by it's full `index/type/id` path:
 

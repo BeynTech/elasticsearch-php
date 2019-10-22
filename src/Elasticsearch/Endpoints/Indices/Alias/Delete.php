@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Alias;
+namespace BeynElasticsearch\Endpoints\Indices\Alias;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions;
 
 /**
  * Class Delete
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Alias
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Indices\Alias
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -37,7 +37,7 @@ class Delete extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \BeynElasticsearch\Common\Exceptions\RuntimeException
      */
     public function getURI(): string
     {

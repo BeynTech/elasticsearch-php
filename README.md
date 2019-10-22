@@ -4,7 +4,7 @@ elasticsearch-php
 [![Build Status](https://travis-ci.org/elastic/elasticsearch-php.svg?branch=master)](https://travis-ci.org/elastic/elasticsearch-php) [![Latest Stable Version](https://poser.pugx.org/elasticsearch/elasticsearch/v/stable)](https://packagist.org/packages/elasticsearch/elasticsearch) [![Total Downloads](https://poser.pugx.org/elasticsearch/elasticsearch/downloads)](https://packagist.org/packages/elasticsearch/elasticsearch)
 
 
-Official low-level client for Elasticsearch. Its goal is to provide common ground for all Elasticsearch-related code in PHP; because of this it tries to be opinion-free and very extendable.
+Official low-level client for BeynElasticsearch. Its goal is to provide common ground for all BeynElasticsearch-related code in PHP; because of this it tries to be opinion-free and very extendable.
 
 To maintain consistency across all the low-level clients (Ruby, Python, etc.), clients accept simple associative arrays as parameters.  All parameters, from the URI to the document body, are defined in the associative array.
 
@@ -27,7 +27,7 @@ Features
 Version Matrix
 --------------
 
-| Elasticsearch Version | Elasticsearch-PHP Branch |
+| BeynElasticsearch Version | BeynElasticsearch-PHP Branch |
 | --------------------- | ------------------------ |
 | >= 7.2, < 8.0         | 7.2                      |
 | >= 7.0, < 7.2         | 7.0                      |
@@ -38,14 +38,14 @@ Version Matrix
 | >= 1.0, < 2.0         | 1.0 or 2.0               |
 | <= 0.90.x             | 0.4                      |
 
- - If you are using Elasticsearch 7.2+, use Elasticsearch-PHP 7.2 branch.
- - If you are using Elasticsearch 7.0 to 7.1, use Elasticsearch-PHP 7.0 branch.
- - If you are using Elasticsearch 6.6 to 6.7, use Elasticsearch-PHP 6.7.x branch.
- - If you are using Elasticsearch 6.0 to 6.5, use Elasticsearch-PHP 6.5.x branch.
- - If you are using Elasticsearch 5.x, use Elasticsearch-PHP 5.0 branch.
- - If you are using Elasticsearch 1.x or 2.x, prefer using the Elasticsearch-PHP 2.0 branch.  The 1.0 branch is compatible however.
- - If you are using a version older than 1.0, you must install the `0.4` Elasticsearch-PHP branch. Since ES 0.90.x and below is now EOL, the corresponding `0.4` branch will not receive any more development or bugfixes.  Please upgrade.
- - You should never use Elasticsearch-PHP Master branch, as it tracks Elasticsearch master and may contain incomplete features or breaks in backwards compatibility. Only use ES-PHP master if you are developing against ES master for some reason.
+ - If you are using BeynElasticsearch 7.2+, use BeynElasticsearch-PHP 7.2 branch.
+ - If you are using BeynElasticsearch 7.0 to 7.1, use BeynElasticsearch-PHP 7.0 branch.
+ - If you are using BeynElasticsearch 6.6 to 6.7, use BeynElasticsearch-PHP 6.7.x branch.
+ - If you are using BeynElasticsearch 6.0 to 6.5, use BeynElasticsearch-PHP 6.5.x branch.
+ - If you are using BeynElasticsearch 5.x, use BeynElasticsearch-PHP 5.0 branch.
+ - If you are using BeynElasticsearch 1.x or 2.x, prefer using the BeynElasticsearch-PHP 2.0 branch.  The 1.0 branch is compatible however.
+ - If you are using a version older than 1.0, you must install the `0.4` BeynElasticsearch-PHP branch. Since ES 0.90.x and below is now EOL, the corresponding `0.4` branch will not receive any more development or bugfixes.  Please upgrade.
+ - You should never use BeynElasticsearch-PHP Master branch, as it tracks BeynElasticsearch master and may contain incomplete features or breaks in backwards compatibility. Only use ES-PHP master if you are developing against ES master for some reason.
 
 Documentation
 --------------
@@ -53,9 +53,9 @@ Documentation
 
 Installation via Composer
 -------------------------
-The recommended method to install _Elasticsearch-PHP_ is through [Composer](http://getcomposer.org).
+The recommended method to install _BeynElasticsearch-PHP_ is through [Composer](http://getcomposer.org).
 
-1. Add `elasticsearch/elasticsearch` as a dependency in your project's `composer.json` file (change version to suit your version of Elasticsearch, for instance for ES 7.0):
+1. Add `elasticsearch/elasticsearch` as a dependency in your project's `composer.json` file (change version to suit your version of BeynElasticsearch, for instance for ES 7.0):
 
     ```json
         {
@@ -84,7 +84,7 @@ The recommended method to install _Elasticsearch-PHP_ is through [Composer](http
     ```php
         <?php
 
-        use Elasticsearch\ClientBuilder;
+        use BeynElasticsearch\ClientBuilder;
 
         require 'vendor/autoload.php';
 
@@ -98,7 +98,7 @@ PHP Version Requirement
 Version 7.0 of this library requires at least PHP version 7.1. In addition, it requires the native JSON
 extension to be version 1.3.7 or higher.
 
-| Elasticsearch-PHP Branch | PHP Version |
+| BeynElasticsearch-PHP Branch | PHP Version |
 | ----------- | ------------------------ |
 | 7.0         | >= 7.1.0                 |
 | 6.0         | >= 7.0.0                 |
@@ -131,7 +131,7 @@ print_r($response);
 ```
 
 The response that you get back indicates the document was created in the index that you specified.  The response is an
-associative array containing a decoded version of the JSON that Elasticsearch returns:
+associative array containing a decoded version of the JSON that BeynElasticsearch returns:
 
 ```php
 Array
@@ -168,7 +168,7 @@ print_r($response);
 ```
 
 The response contains some metadata (index, version, etc.) as well as a `_source` field, which is the original document
-that you sent to Elasticsearch.
+that you sent to BeynElasticsearch.
 
 ```php
 Array
@@ -211,7 +211,7 @@ Array
 
 ### Search for a document
 
-Searching is a hallmark of Elasticsearch, so let's perform a search.  We are going to use the Match query as a demonstration:
+Searching is a hallmark of BeynElasticsearch, so let's perform a search.  We are going to use the Match query as a demonstration:
 
 ```php
 $params = [
@@ -317,7 +317,7 @@ Array
 
 ### Delete an index
 
-Due to the dynamic nature of Elasticsearch, the first document we added automatically built an index with some default settings.  Let's delete that index because we want to specify our own settings later:
+Due to the dynamic nature of BeynElasticsearch, the first document we added automatically built an index with some default settings.  Let's delete that index because we want to specify our own settings later:
 
 ```php
 $deleteParams = [
@@ -356,7 +356,7 @@ $response = $client->indices()->create($params);
 print_r($response);
 ```
 
-Elasticsearch will now create that index with your chosen settings, and return an acknowledgement:
+BeynElasticsearch will now create that index with your chosen settings, and return an acknowledgement:
 
 ```php
 Array
@@ -369,7 +369,7 @@ Unit Testing using Mock a Elastic Client
 ========================================
 ```php
 use GuzzleHttp\Ring\Client\MockHandler;
-use Elasticsearch\ClientBuilder;
+use BeynElasticsearch\ClientBuilder;
 
 // The connection class requires 'body' to be a file stream handle
 // Depending on what kind of request you do, you may need to set more values here
@@ -391,7 +391,7 @@ $client = $builder->build();
 Wrap up
 =======
 
-That was just a crash-course overview of the client and its syntax.  If you are familiar with Elasticsearch, you'll notice that the methods are named just like REST endpoints.
+That was just a crash-course overview of the client and its syntax.  If you are familiar with BeynElasticsearch, you'll notice that the methods are named just like REST endpoints.
 
 You'll also notice that the client is configured in a manner that facilitates easy discovery via the IDE.  All core actions are available under the `$client` object (indexing, searching, getting, etc.).  Index and cluster management are located under the `$client->indices()` and `$client->cluster()` objects, respectively.
 
@@ -401,7 +401,7 @@ Check out the rest of the [Documentation](https://www.elastic.co/guide/en/elasti
 Available Licenses
 -------
 
-Starting with version 1.3.1, Elasticsearch-PHP is available under two licenses: Apache v2.0 and LGPL v2.1.  Versions
+Starting with version 1.3.1, BeynElasticsearch-PHP is available under two licenses: Apache v2.0 and LGPL v2.1.  Versions
 prior to 1.3.1 are still licensed with only Apache v2.0.
 
 The user may choose which license they wish to use.  Since there is no discriminating executable or distribution bundle
@@ -412,7 +412,7 @@ If no explicit choice is made, assumption is that redistribution obeys rules of 
 All contributions to the library are to be so that they can be licensed under both licenses.
 
 Apache v2.0 License:
->Copyright 2013-2016 Elasticsearch
+>Copyright 2013-2016 BeynElasticsearch
 >
 >Licensed under the Apache License, Version 2.0 (the "License");
 >you may not use this file except in compliance with the License.
@@ -427,7 +427,7 @@ Apache v2.0 License:
 >limitations under the License.
 
 LGPL v2.1 Notice:
->Copyright (C) 2013-2016 Elasticsearch
+>Copyright (C) 2013-2016 BeynElasticsearch
 >
 >This library is free software; you can redistribute it and/or
 >modify it under the terms of the GNU Lesser General Public

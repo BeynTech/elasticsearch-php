@@ -2,17 +2,17 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\ConnectionPool\Selectors;
+namespace BeynElasticsearch\Tests\ConnectionPool\Selectors;
 
-use Elasticsearch;
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch;
+use BeynElasticsearch\Connections\ConnectionInterface;
 use Mockery as m;
 
 /**
  * Class StickyRoundRobinSelectorTest
  *
  * @category   Tests
- * @package    Elasticsearch
+ * @package    BeynElasticsearch
  * @subpackage Tests\ConnectionPool\StickyRoundRobinSelectorTest
  * @author     Zachary Tong <zachary.tong@elasticsearch.com>
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache2
@@ -27,7 +27,7 @@ class StickyRoundRobinSelectorTest extends \PHPUnit\Framework\TestCase
 
     public function testTenConnections()
     {
-        $roundRobin = new Elasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector();
+        $roundRobin = new BeynElasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector();
 
         $mockConnections = [];
         $mockConnections[] = m::mock(ConnectionInterface::class)
@@ -46,7 +46,7 @@ class StickyRoundRobinSelectorTest extends \PHPUnit\Framework\TestCase
 
     public function testTenConnectionsFirstDies()
     {
-        $roundRobin = new Elasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector();
+        $roundRobin = new BeynElasticsearch\ConnectionPool\Selectors\StickyRoundRobinSelector();
 
         $mockConnections = [];
         $mockConnections[] = m::mock(ConnectionInterface::class)

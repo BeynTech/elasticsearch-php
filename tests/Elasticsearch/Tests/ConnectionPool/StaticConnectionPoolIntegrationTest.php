@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\ConnectionPool;
+namespace BeynElasticsearch\Tests\ConnectionPool;
 
-use Elasticsearch;
+use BeynElasticsearch;
 
 /**
  * Class StaticConnectionPoolIntegrationTest
  *
  * @category   Tests
- * @package    Elasticsearch
+ * @package    BeynElasticsearch
  * @subpackage Tests/StaticConnectionPoolTest
  * @author     Zachary Tong <zachary.tong@elasticsearch.com>
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache2
@@ -22,7 +22,7 @@ class StaticConnectionPoolIntegrationTest extends \PHPUnit\Framework\TestCase
     {
         if (empty(getenv('ES_TEST_HOST'))) {
             $this->markTestSkipped(
-                'Elasticsearch is not configured. Check the ES_TEST_HOST env in your phpunit.xml file.'
+                'BeynElasticsearch is not configured. Check the ES_TEST_HOST env in your phpunit.xml file.'
             );
         }
     }
@@ -30,9 +30,9 @@ class StaticConnectionPoolIntegrationTest extends \PHPUnit\Framework\TestCase
     // Issue #636
     public function test404Liveness()
     {
-        $client = \Elasticsearch\ClientBuilder::create()
+        $client = \BeynElasticsearch\ClientBuilder::create()
             ->setHosts([getenv('ES_TEST_HOST')])
-            ->setConnectionPool(\Elasticsearch\ConnectionPool\StaticConnectionPool::class)
+            ->setConnectionPool(\BeynElasticsearch\ConnectionPool\StaticConnectionPool::class)
             ->build();
 
         $connection = $client->transport->getConnection();

@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_ClientBuilder]]
-=== Elasticsearch\ClientBuilder
+[[BeynElasticsearch_ClientBuilder]]
+=== BeynElasticsearch\ClientBuilder
 
 
 
@@ -12,37 +12,37 @@ Class ClientBuilder
 
 The class defines the following methods:
 
-* <<Elasticsearch_ClientBuildercreate_create,`create()`>>
-* <<Elasticsearch_ClientBuildergetTransport_getTransport,`getTransport()`>>
-* <<Elasticsearch_ClientBuildergetEndpoint_getEndpoint,`getEndpoint()`>>
-* <<Elasticsearch_ClientBuildergetRegisteredNamespacesBuilders_getRegisteredNamespacesBuilders,`getRegisteredNamespacesBuilders()`>>
-* <<Elasticsearch_ClientBuilderfromConfig_fromConfig,`fromConfig()`>>
-* <<Elasticsearch_ClientBuilderdefaultHandler_defaultHandler,`defaultHandler()`>>
-* <<Elasticsearch_ClientBuildermultiHandler_multiHandler,`multiHandler()`>>
-* <<Elasticsearch_ClientBuildersingleHandler_singleHandler,`singleHandler()`>>
-* <<Elasticsearch_ClientBuildersetConnectionFactory_setConnectionFactory,`setConnectionFactory()`>>
-* <<Elasticsearch_ClientBuildersetConnectionPool_setConnectionPool,`setConnectionPool()`>>
-* <<Elasticsearch_ClientBuildersetEndpoint_setEndpoint,`setEndpoint()`>>
-* <<Elasticsearch_ClientBuilderregisterNamespace_registerNamespace,`registerNamespace()`>>
-* <<Elasticsearch_ClientBuildersetTransport_setTransport,`setTransport()`>>
-* <<Elasticsearch_ClientBuildersetHandler_setHandler,`setHandler()`>>
-* <<Elasticsearch_ClientBuildersetLogger_setLogger,`setLogger()`>>
-* <<Elasticsearch_ClientBuildersetTracer_setTracer,`setTracer()`>>
-* <<Elasticsearch_ClientBuildersetSerializer_setSerializer,`setSerializer()`>>
-* <<Elasticsearch_ClientBuildersetHosts_setHosts,`setHosts()`>>
-* <<Elasticsearch_ClientBuildersetConnectionParams_setConnectionParams,`setConnectionParams()`>>
-* <<Elasticsearch_ClientBuildersetRetries_setRetries,`setRetries()`>>
-* <<Elasticsearch_ClientBuildersetSelector_setSelector,`setSelector()`>>
-* <<Elasticsearch_ClientBuildersetSniffOnStart_setSniffOnStart,`setSniffOnStart()`>>
-* <<Elasticsearch_ClientBuildersetSSLCert_setSSLCert,`setSSLCert()`>>
-* <<Elasticsearch_ClientBuildersetSSLKey_setSSLKey,`setSSLKey()`>>
-* <<Elasticsearch_ClientBuildersetSSLVerification_setSSLVerification,`setSSLVerification()`>>
-* <<Elasticsearch_ClientBuilderbuild_build,`build()`>>
-* <<Elasticsearch_ClientBuilderinstantiate_instantiate,`instantiate()`>>
+* <<BeynElasticsearch_ClientBuildercreate_create,`create()`>>
+* <<BeynElasticsearch_ClientBuildergetTransport_getTransport,`getTransport()`>>
+* <<BeynElasticsearch_ClientBuildergetEndpoint_getEndpoint,`getEndpoint()`>>
+* <<BeynElasticsearch_ClientBuildergetRegisteredNamespacesBuilders_getRegisteredNamespacesBuilders,`getRegisteredNamespacesBuilders()`>>
+* <<BeynElasticsearch_ClientBuilderfromConfig_fromConfig,`fromConfig()`>>
+* <<BeynElasticsearch_ClientBuilderdefaultHandler_defaultHandler,`defaultHandler()`>>
+* <<BeynElasticsearch_ClientBuildermultiHandler_multiHandler,`multiHandler()`>>
+* <<BeynElasticsearch_ClientBuildersingleHandler_singleHandler,`singleHandler()`>>
+* <<BeynElasticsearch_ClientBuildersetConnectionFactory_setConnectionFactory,`setConnectionFactory()`>>
+* <<BeynElasticsearch_ClientBuildersetConnectionPool_setConnectionPool,`setConnectionPool()`>>
+* <<BeynElasticsearch_ClientBuildersetEndpoint_setEndpoint,`setEndpoint()`>>
+* <<BeynElasticsearch_ClientBuilderregisterNamespace_registerNamespace,`registerNamespace()`>>
+* <<BeynElasticsearch_ClientBuildersetTransport_setTransport,`setTransport()`>>
+* <<BeynElasticsearch_ClientBuildersetHandler_setHandler,`setHandler()`>>
+* <<BeynElasticsearch_ClientBuildersetLogger_setLogger,`setLogger()`>>
+* <<BeynElasticsearch_ClientBuildersetTracer_setTracer,`setTracer()`>>
+* <<BeynElasticsearch_ClientBuildersetSerializer_setSerializer,`setSerializer()`>>
+* <<BeynElasticsearch_ClientBuildersetHosts_setHosts,`setHosts()`>>
+* <<BeynElasticsearch_ClientBuildersetConnectionParams_setConnectionParams,`setConnectionParams()`>>
+* <<BeynElasticsearch_ClientBuildersetRetries_setRetries,`setRetries()`>>
+* <<BeynElasticsearch_ClientBuildersetSelector_setSelector,`setSelector()`>>
+* <<BeynElasticsearch_ClientBuildersetSniffOnStart_setSniffOnStart,`setSniffOnStart()`>>
+* <<BeynElasticsearch_ClientBuildersetSSLCert_setSSLCert,`setSSLCert()`>>
+* <<BeynElasticsearch_ClientBuildersetSSLKey_setSSLKey,`setSSLKey()`>>
+* <<BeynElasticsearch_ClientBuildersetSSLVerification_setSSLVerification,`setSSLVerification()`>>
+* <<BeynElasticsearch_ClientBuilderbuild_build,`build()`>>
+* <<BeynElasticsearch_ClientBuilderinstantiate_instantiate,`instantiate()`>>
 
 
 
-[[Elasticsearch_ClientBuildercreate_create]]
+[[BeynElasticsearch_ClientBuildercreate_create]]
 .`create()`
 ****
 [source,php]
@@ -55,7 +55,7 @@ The class defines the following methods:
 
 
 
-[[Elasticsearch_ClientBuildergetTransport_getTransport]]
+[[BeynElasticsearch_ClientBuildergetTransport_getTransport]]
 .`getTransport()`
 ****
 [source,php]
@@ -70,7 +70,7 @@ The class defines the following methods:
 
 
 
-[[Elasticsearch_ClientBuildergetEndpoint_getEndpoint]]
+[[BeynElasticsearch_ClientBuildergetEndpoint_getEndpoint]]
 .`getEndpoint()`
 ****
 [source,php]
@@ -85,7 +85,7 @@ The class defines the following methods:
 
 
 
-[[Elasticsearch_ClientBuildergetRegisteredNamespacesBuilders_getRegisteredNamespacesBuilders]]
+[[BeynElasticsearch_ClientBuildergetRegisteredNamespacesBuilders_getRegisteredNamespacesBuilders]]
 .`getRegisteredNamespacesBuilders()`
 ****
 [source,php]
@@ -100,7 +100,7 @@ The class defines the following methods:
 
 
 
-[[Elasticsearch_ClientBuilderfromConfig_fromConfig]]
+[[BeynElasticsearch_ClientBuilderfromConfig_fromConfig]]
 .`fromConfig()`
 ****
 [source,php]
@@ -117,7 +117,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuilderdefaultHandler_defaultHandler]]
+[[BeynElasticsearch_ClientBuilderdefaultHandler_defaultHandler]]
 .`defaultHandler()`
 ****
 [source,php]
@@ -130,7 +130,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildermultiHandler_multiHandler]]
+[[BeynElasticsearch_ClientBuildermultiHandler_multiHandler]]
 .`multiHandler()`
 ****
 [source,php]
@@ -143,7 +143,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersingleHandler_singleHandler]]
+[[BeynElasticsearch_ClientBuildersingleHandler_singleHandler]]
 .`singleHandler()`
 ****
 [source,php]
@@ -156,7 +156,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetConnectionFactory_setConnectionFactory]]
+[[BeynElasticsearch_ClientBuildersetConnectionFactory_setConnectionFactory]]
 .`setConnectionFactory()`
 ****
 [source,php]
@@ -169,7 +169,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetConnectionPool_setConnectionPool]]
+[[BeynElasticsearch_ClientBuildersetConnectionPool_setConnectionPool]]
 .`setConnectionPool()`
 ****
 [source,php]
@@ -182,7 +182,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetEndpoint_setEndpoint]]
+[[BeynElasticsearch_ClientBuildersetEndpoint_setEndpoint]]
 .`setEndpoint()`
 ****
 [source,php]
@@ -195,7 +195,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuilderregisterNamespace_registerNamespace]]
+[[BeynElasticsearch_ClientBuilderregisterNamespace_registerNamespace]]
 .`registerNamespace()`
 ****
 [source,php]
@@ -208,7 +208,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetTransport_setTransport]]
+[[BeynElasticsearch_ClientBuildersetTransport_setTransport]]
 .`setTransport()`
 ****
 [source,php]
@@ -221,7 +221,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetHandler_setHandler]]
+[[BeynElasticsearch_ClientBuildersetHandler_setHandler]]
 .`setHandler()`
 ****
 [source,php]
@@ -234,7 +234,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetLogger_setLogger]]
+[[BeynElasticsearch_ClientBuildersetLogger_setLogger]]
 .`setLogger()`
 ****
 [source,php]
@@ -247,7 +247,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetTracer_setTracer]]
+[[BeynElasticsearch_ClientBuildersetTracer_setTracer]]
 .`setTracer()`
 ****
 [source,php]
@@ -260,7 +260,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSerializer_setSerializer]]
+[[BeynElasticsearch_ClientBuildersetSerializer_setSerializer]]
 .`setSerializer()`
 ****
 [source,php]
@@ -273,7 +273,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetHosts_setHosts]]
+[[BeynElasticsearch_ClientBuildersetHosts_setHosts]]
 .`setHosts()`
 ****
 [source,php]
@@ -286,7 +286,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetConnectionParams_setConnectionParams]]
+[[BeynElasticsearch_ClientBuildersetConnectionParams_setConnectionParams]]
 .`setConnectionParams()`
 ****
 [source,php]
@@ -299,7 +299,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetRetries_setRetries]]
+[[BeynElasticsearch_ClientBuildersetRetries_setRetries]]
 .`setRetries()`
 ****
 [source,php]
@@ -312,7 +312,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSelector_setSelector]]
+[[BeynElasticsearch_ClientBuildersetSelector_setSelector]]
 .`setSelector()`
 ****
 [source,php]
@@ -325,7 +325,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSniffOnStart_setSniffOnStart]]
+[[BeynElasticsearch_ClientBuildersetSniffOnStart_setSniffOnStart]]
 .`setSniffOnStart()`
 ****
 [source,php]
@@ -338,7 +338,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSSLCert_setSSLCert]]
+[[BeynElasticsearch_ClientBuildersetSSLCert_setSSLCert]]
 .`setSSLCert()`
 ****
 [source,php]
@@ -351,7 +351,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSSLKey_setSSLKey]]
+[[BeynElasticsearch_ClientBuildersetSSLKey_setSSLKey]]
 .`setSSLKey()`
 ****
 [source,php]
@@ -364,7 +364,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuildersetSSLVerification_setSSLVerification]]
+[[BeynElasticsearch_ClientBuildersetSSLVerification_setSSLVerification]]
 .`setSSLVerification()`
 ****
 [source,php]
@@ -377,7 +377,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuilderbuild_build]]
+[[BeynElasticsearch_ClientBuilderbuild_build]]
 .`build()`
 ****
 [source,php]
@@ -390,7 +390,7 @@ corresponds to setConnectionPool().
 
 
 
-[[Elasticsearch_ClientBuilderinstantiate_instantiate]]
+[[BeynElasticsearch_ClientBuilderinstantiate_instantiate]]
 .`instantiate()`
 ****
 [source,php]

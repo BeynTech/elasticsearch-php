@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespace]]
-=== Elasticsearch\Namespaces\SnapshotNamespace
+[[BeynElasticsearch_Namespaces_SnapshotNamespace]]
+=== BeynElasticsearch\Namespaces\SnapshotNamespace
 
 
 
@@ -12,19 +12,19 @@ Class SnapshotNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_SnapshotNamespacecreate_create,`create()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacecreateRepository_createRepository,`createRepository()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacedelete_delete,`delete()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacedeleteRepository_deleteRepository,`deleteRepository()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespaceget_get,`get()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacegetRepository_getRepository,`getRepository()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacerestore_restore,`restore()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespacestatus_status,`status()`>>
-* <<Elasticsearch_Namespaces_SnapshotNamespaceverifyRepository_verifyRepository,`verifyRepository()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacecreate_create,`create()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacecreateRepository_createRepository,`createRepository()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacedelete_delete,`delete()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacedeleteRepository_deleteRepository,`deleteRepository()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespaceget_get,`get()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacegetRepository_getRepository,`getRepository()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacerestore_restore,`restore()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespacestatus_status,`status()`>>
+* <<BeynElasticsearch_Namespaces_SnapshotNamespaceverifyRepository_verifyRepository,`verifyRepository()`>>
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacecreate_create]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacecreate_create]]
 .`create()`
 ****
 [source,php]
@@ -46,7 +46,7 @@ $response = $client->snapshot()->create($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacecreateRepository_createRepository]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacecreateRepository_createRepository]]
 .`createRepository()`
 ****
 [source,php]
@@ -68,7 +68,7 @@ $response = $client->snapshot()->createRepository($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacedelete_delete]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacedelete_delete]]
 .`delete()`
 ****
 [source,php]
@@ -89,7 +89,7 @@ $response = $client->snapshot()->delete($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacedeleteRepository_deleteRepository]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacedeleteRepository_deleteRepository]]
 .`deleteRepository()`
 ****
 [source,php]
@@ -111,7 +111,7 @@ $response = $client->snapshot()->deleteRepository($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespaceget_get]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespaceget_get]]
 .`get()`
 ****
 [source,php]
@@ -132,7 +132,7 @@ $response = $client->snapshot()->get($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacegetRepository_getRepository]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacegetRepository_getRepository]]
 .`getRepository()`
 ****
 [source,php]
@@ -154,7 +154,7 @@ $response = $client->snapshot()->getRepository($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacerestore_restore]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacerestore_restore]]
 .`restore()`
 ****
 [source,php]
@@ -176,7 +176,7 @@ $response = $client->snapshot()->restore($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespacestatus_status]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespacestatus_status]]
 .`status()`
 ****
 [source,php]
@@ -197,7 +197,7 @@ $response = $client->snapshot()->status($params);
 
 
 
-[[Elasticsearch_Namespaces_SnapshotNamespaceverifyRepository_verifyRepository]]
+[[BeynElasticsearch_Namespaces_SnapshotNamespaceverifyRepository_verifyRepository]]
 .`verifyRepository()`
 ****
 [source,php]

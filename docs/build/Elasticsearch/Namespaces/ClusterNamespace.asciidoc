@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_ClusterNamespace]]
-=== Elasticsearch\Namespaces\ClusterNamespace
+[[BeynElasticsearch_Namespaces_ClusterNamespace]]
+=== BeynElasticsearch\Namespaces\ClusterNamespace
 
 
 
@@ -12,19 +12,19 @@ Class ClusterNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_ClusterNamespacehealth_health,`health()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespacereroute_reroute,`reroute()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespacestate_state,`state()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespacestats_stats,`stats()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespaceputSettings_putSettings,`putSettings()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespacegetSettings_getSettings,`getSettings()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespacependingTasks_pendingTasks,`pendingTasks()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespaceallocationExplain_allocationExplain,`allocationExplain()`>>
-* <<Elasticsearch_Namespaces_ClusterNamespaceremoteInfo_remoteInfo,`remoteInfo()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacehealth_health,`health()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacereroute_reroute,`reroute()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacestate_state,`state()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacestats_stats,`stats()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespaceputSettings_putSettings,`putSettings()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacegetSettings_getSettings,`getSettings()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespacependingTasks_pendingTasks,`pendingTasks()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespaceallocationExplain_allocationExplain,`allocationExplain()`>>
+* <<BeynElasticsearch_Namespaces_ClusterNamespaceremoteInfo_remoteInfo,`remoteInfo()`>>
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacehealth_health]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacehealth_health]]
 .`health()`
 ****
 [source,php]
@@ -53,7 +53,7 @@ $response = $client->cluster()->health($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacereroute_reroute]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacereroute_reroute]]
 .`reroute()`
 ****
 [source,php]
@@ -77,7 +77,7 @@ $response = $client->cluster()->reroute($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacestate_state]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacestate_state]]
 .`state()`
 ****
 [source,php]
@@ -105,7 +105,7 @@ $response = $client->cluster()->state($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacestats_stats]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacestats_stats]]
 .`stats()`
 ****
 [source,php]
@@ -127,7 +127,7 @@ $response = $client->cluster()->stats($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespaceputSettings_putSettings]]
+[[BeynElasticsearch_Namespaces_ClusterNamespaceputSettings_putSettings]]
 .`putSettings()`
 ****
 [source,php]
@@ -148,7 +148,7 @@ $response = $client->cluster()->putSettings($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacegetSettings_getSettings]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacegetSettings_getSettings]]
 .`getSettings()`
 ****
 [source,php]
@@ -167,7 +167,7 @@ $response = $client->cluster()->getSettings($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespacependingTasks_pendingTasks]]
+[[BeynElasticsearch_Namespaces_ClusterNamespacependingTasks_pendingTasks]]
 .`pendingTasks()`
 ****
 [source,php]
@@ -189,7 +189,7 @@ $response = $client->cluster()->pendingTasks($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespaceallocationExplain_allocationExplain]]
+[[BeynElasticsearch_Namespaces_ClusterNamespaceallocationExplain_allocationExplain]]
 .`allocationExplain()`
 ****
 [source,php]
@@ -210,7 +210,7 @@ $response = $client->cluster()->allocationExplain($params);
 
 
 
-[[Elasticsearch_Namespaces_ClusterNamespaceremoteInfo_remoteInfo]]
+[[BeynElasticsearch_Namespaces_ClusterNamespaceremoteInfo_remoteInfo]]
 .`remoteInfo()`
 ****
 [source,php]

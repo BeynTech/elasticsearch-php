@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Aliases;
+namespace BeynElasticsearch\Endpoints\Indices\Aliases;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions;
 
 /**
  * Class Update
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Aliases
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Indices\Aliases
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -19,7 +19,7 @@ use Elasticsearch\Common\Exceptions;
 class Update extends AbstractEndpoint
 {
     /**
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \BeynElasticsearch\Common\Exceptions\InvalidArgumentException
      */
     public function setBody($body): Update
     {
@@ -46,7 +46,7 @@ class Update extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \BeynElasticsearch\Common\Exceptions\RuntimeException
      */
     public function getBody()
     {

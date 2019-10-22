@@ -8,4 +8,4 @@ parameters:
         - '#class JsonException#'
         -
             message: '#is not subtype of Throwable#'
-            path: %currentWorkingDirectory%/src/Elasticsearch/ClientBuilder.php
+            path: %currentWorkingDirectory%/src/BeynElasticsearch/ClientBuilder.php

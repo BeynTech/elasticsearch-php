@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Snapshot\Repository;
+namespace BeynElasticsearch\Endpoints\Snapshot\Repository;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class Get
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Snapshot\Repository
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Snapshot\Repository
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

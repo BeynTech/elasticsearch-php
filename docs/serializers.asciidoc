@@ -14,13 +14,13 @@ The default serializer is the `SmartSerializer`
 === SmartSerializer
 ==== Serialize()
 The `SmartSerializer` inspects the data to be encoded.  If the request body
-is provided as a string, it is passed directly to Elasticsearch as a string.
+is provided as a string, it is passed directly to BeynElasticsearch as a string.
 This allows users to provide raw JSON, or raw strings for certain endpoints that
 dont have structure (such as the Analyze endpoint).
 
 If the data is an array, it is converted to json.  If the data provided was an
 empty array, the serializer manually converts the JSON from an empty array (`[]`)
-to an empty object (`{}`) so that it is valid JSON for Elasticsearch request
+to an empty object (`{}`) so that it is valid JSON for BeynElasticsearch request
 bodies.
 
 ==== Deserialize()
@@ -40,7 +40,7 @@ do so by using the `setSerializer()` method on the ClientBuilder object:
 [source,php]
 ----
 $client = ClientBuilder::create()
-            ->setSerializer('\Elasticsearch\Serializers\SmartSerializer');
+            ->setSerializer('\BeynElasticsearch\Serializers\SmartSerializer');
             ->build();
 ----
 
@@ -49,13 +49,13 @@ Note that the serializer is configured by specifying a namespace path to the ser
 === ArrayToJSONSerializer
 ==== Serialize()
 The `ArrayToJSONSerializer` inspects the data to be encoded.  If the request body
-is provided as a string, it is passed directly to Elasticsearch as a string.
+is provided as a string, it is passed directly to BeynElasticsearch as a string.
 This allows users to provide raw JSON, or raw strings for certain endpoints that
 dont have structure (such as the Analyze endpoint).
 
 If the data is an array, it is converted to json.  If the data provided was an
 empty array, the serializer manually converts the JSON from an empty array (`[]`)
-to an empty object (`{}`) so that it is valid JSON for Elasticsearch request
+to an empty object (`{}`) so that it is valid JSON for BeynElasticsearch request
 bodies.
 
 ==== Deserialize()
@@ -69,7 +69,7 @@ You can select  `ArrayToJSONSerializer` by using the `setSerializer()` method on
 [source,php]
 ----
 $client = ClientBuilder::create()
-            ->setSerializer('\Elasticsearch\Serializers\ArrayToJSONSerializer');
+            ->setSerializer('\BeynElasticsearch\Serializers\ArrayToJSONSerializer');
             ->build();
 ----
 
@@ -81,7 +81,7 @@ The `EverythingToJSONSerializer` tries to convert everything to JSON.
 
 If the data provided was an empty array, the serializer manually converts the
 JSON from an empty array (`[]`) to an empty object (`{}`) so that it is valid
-JSON for Elasticsearch request bodies.
+JSON for BeynElasticsearch request bodies.
 
 If the data was not an array and/or not convertible to JSON, the method returns
 `null`.
@@ -97,7 +97,7 @@ You can select  `EverythingToJSONSerializer` by using the `setSerializer()` meth
 [source,php]
 ----
 $client = ClientBuilder::create()
-            ->setSerializer('\Elasticsearch\Serializers\EverythingToJSONSerializer');
+            ->setSerializer('\BeynElasticsearch\Serializers\EverythingToJSONSerializer');
             ->build();
 ----
 

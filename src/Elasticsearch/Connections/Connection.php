@@ -2,28 +2,28 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Connections;
+namespace BeynElasticsearch\Connections;
 
-use Elasticsearch\Client;
-use Elasticsearch\Common\Exceptions\AlreadyExpiredException;
-use Elasticsearch\Common\Exceptions\BadRequest400Exception;
-use Elasticsearch\Common\Exceptions\Conflict409Exception;
-use Elasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost;
-use Elasticsearch\Common\Exceptions\Curl\CouldNotResolveHostException;
-use Elasticsearch\Common\Exceptions\Curl\OperationTimeoutException;
-use Elasticsearch\Common\Exceptions\ElasticsearchException;
-use Elasticsearch\Common\Exceptions\Forbidden403Exception;
-use Elasticsearch\Common\Exceptions\MaxRetriesException;
-use Elasticsearch\Common\Exceptions\Missing404Exception;
-use Elasticsearch\Common\Exceptions\NoDocumentsToGetException;
-use Elasticsearch\Common\Exceptions\NoShardAvailableException;
-use Elasticsearch\Common\Exceptions\RequestTimeout408Exception;
-use Elasticsearch\Common\Exceptions\RoutingMissingException;
-use Elasticsearch\Common\Exceptions\ScriptLangNotSupportedException;
-use Elasticsearch\Common\Exceptions\ServerErrorResponseException;
-use Elasticsearch\Common\Exceptions\TransportException;
-use Elasticsearch\Serializers\SerializerInterface;
-use Elasticsearch\Transport;
+use BeynElasticsearch\Client;
+use BeynElasticsearch\Common\Exceptions\AlreadyExpiredException;
+use BeynElasticsearch\Common\Exceptions\BadRequest400Exception;
+use BeynElasticsearch\Common\Exceptions\Conflict409Exception;
+use BeynElasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost;
+use BeynElasticsearch\Common\Exceptions\Curl\CouldNotResolveHostException;
+use BeynElasticsearch\Common\Exceptions\Curl\OperationTimeoutException;
+use BeynElasticsearch\Common\Exceptions\BeynElasticsearchException;
+use BeynElasticsearch\Common\Exceptions\Forbidden403Exception;
+use BeynElasticsearch\Common\Exceptions\MaxRetriesException;
+use BeynElasticsearch\Common\Exceptions\Missing404Exception;
+use BeynElasticsearch\Common\Exceptions\NoDocumentsToGetException;
+use BeynElasticsearch\Common\Exceptions\NoShardAvailableException;
+use BeynElasticsearch\Common\Exceptions\RequestTimeout408Exception;
+use BeynElasticsearch\Common\Exceptions\RoutingMissingException;
+use BeynElasticsearch\Common\Exceptions\ScriptLangNotSupportedException;
+use BeynElasticsearch\Common\Exceptions\ServerErrorResponseException;
+use BeynElasticsearch\Common\Exceptions\TransportException;
+use BeynElasticsearch\Serializers\SerializerInterface;
+use BeynElasticsearch\Transport;
 use GuzzleHttp\Ring\Core;
 use GuzzleHttp\Ring\Exception\ConnectException;
 use GuzzleHttp\Ring\Exception\RingException;
@@ -32,8 +32,8 @@ use Psr\Log\LoggerInterface;
 /**
  * Class AbstractConnection
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Connections
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Connections
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -535,7 +535,7 @@ class Connection implements ConnectionInterface
         return $this->port;
     }
 
-    protected function getCurlRetryException(array $request, array $response): ElasticsearchException
+    protected function getCurlRetryException(array $request, array $response): BeynElasticsearchException
     {
         $exception = null;
         $message = $response['error']->getMessage();
@@ -592,7 +592,7 @@ class Connection implements ConnectionInterface
         return $curlCommand;
     }
 
-    private function process4xxError(array $request, array $response, array $ignore): ?ElasticsearchException
+    private function process4xxError(array $request, array $response, array $ignore): ?BeynElasticsearchException
     {
         $statusCode = $response['status'];
         $responseBody = $response['body'];
@@ -632,7 +632,7 @@ class Connection implements ConnectionInterface
         throw $exception;
     }
 
-    private function process5xxError(array $request, array $response, array $ignore): ?ElasticsearchException
+    private function process5xxError(array $request, array $response, array $ignore): ?BeynElasticsearchException
     {
         $statusCode = (int) $response['status'];
         $responseBody = $response['body'];
@@ -665,17 +665,17 @@ class Connection implements ConnectionInterface
         throw $exception;
     }
 
-    private function tryDeserialize400Error(array $response): ElasticsearchException
+    private function tryDeserialize400Error(array $response): BeynElasticsearchException
     {
         return $this->tryDeserializeError($response, BadRequest400Exception::class);
     }
 
-    private function tryDeserialize500Error(array $response): ElasticsearchException
+    private function tryDeserialize500Error(array $response): BeynElasticsearchException
     {
         return $this->tryDeserializeError($response, ServerErrorResponseException::class);
     }
 
-    private function tryDeserializeError(array $response, string $errorClass): ElasticsearchException
+    private function tryDeserializeError(array $response, string $errorClass): BeynElasticsearchException
     {
         $error = $this->serializer->deserialize($response['body'], $response['transfer_stats']);
         if (is_array($error) === true) {

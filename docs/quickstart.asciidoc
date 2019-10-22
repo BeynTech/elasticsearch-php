@@ -30,7 +30,7 @@ php composer.phar install --no-dev
 ----------------------------
 require 'vendor/autoload.php';
 
-use Elasticsearch\ClientBuilder;
+use BeynElasticsearch\ClientBuilder;
 
 $client = ClientBuilder::create()->build();
 ----------------------------
@@ -57,7 +57,7 @@ print_r($response);
 ----------------------------
 
 The response that you get back indicates the document was created in the index that you specified.  The response is an
-associative array containing a decoded version of the JSON that Elasticsearch returns:
+associative array containing a decoded version of the JSON that BeynElasticsearch returns:
 
 [source,php]
 ----------------------------
@@ -88,7 +88,7 @@ print_r($response);
 ----------------------------
 
 The response contains some metadata (index, version, etc.) as well as a `_source` field, which is the original document
-that you sent to Elasticsearch.
+that you sent to BeynElasticsearch.
 
 [source,php]
 ----------------------------
@@ -242,7 +242,7 @@ $response = $client->indices()->create($params);
 print_r($response);
 ----------------------------
 
-Elasticsearch will now create that index with your chosen settings, and return an acknowledgement:
+BeynElasticsearch will now create that index with your chosen settings, and return an acknowledgement:
 
 [source,php]
 ----------------------------

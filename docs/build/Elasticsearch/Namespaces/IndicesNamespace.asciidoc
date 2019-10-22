@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_IndicesNamespace]]
-=== Elasticsearch\Namespaces\IndicesNamespace
+[[BeynElasticsearch_Namespaces_IndicesNamespace]]
+=== BeynElasticsearch\Namespaces\IndicesNamespace
 
 
 
@@ -12,51 +12,51 @@ Class IndicesNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_IndicesNamespaceexists_exists,`exists()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceget_get,`get()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacesegments_segments,`segments()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacedeleteTemplate_deleteTemplate,`deleteTemplate()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacedelete_delete,`delete()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacestats_stats,`stats()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceputSettings_putSettings,`putSettings()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacesnapshotIndex_snapshotIndex,`snapshotIndex()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceshrink_shrink,`shrink()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetMapping_getMapping,`getMapping()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetFieldMapping_getFieldMapping,`getFieldMapping()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceflush_flush,`flush()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceflushSynced_flushSynced,`flushSynced()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacerefresh_refresh,`refresh()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacerecovery_recovery,`recovery()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceexistsType_existsType,`existsType()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceputAlias_putAlias,`putAlias()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceputTemplate_putTemplate,`putTemplate()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacevalidateQuery_validateQuery,`validateQuery()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetAlias_getAlias,`getAlias()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceputMapping_putMapping,`putMapping()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacedeleteMapping_deleteMapping,`deleteMapping()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetTemplate_getTemplate,`getTemplate()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceexistsTemplate_existsTemplate,`existsTemplate()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacecreate_create,`create()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceforceMerge_forceMerge,`forceMerge()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacedeleteAlias_deleteAlias,`deleteAlias()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceopen_open,`open()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceanalyze_analyze,`analyze()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceclearCache_clearCache,`clearCache()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceupdateAliases_updateAliases,`updateAliases()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetAliases_getAliases,`getAliases()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceexistsAlias_existsAlias,`existsAlias()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacestatus_status,`status()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetSettings_getSettings,`getSettings()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceclose_close,`close()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceseal_seal,`seal()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceupgrade_upgrade,`upgrade()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacegetUpgrade_getUpgrade,`getUpgrade()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespaceshardStores_shardStores,`shardStores()`>>
-* <<Elasticsearch_Namespaces_IndicesNamespacerollover_rollover,`rollover()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceexists_exists,`exists()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceget_get,`get()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacesegments_segments,`segments()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacedeleteTemplate_deleteTemplate,`deleteTemplate()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacedelete_delete,`delete()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacestats_stats,`stats()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceputSettings_putSettings,`putSettings()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacesnapshotIndex_snapshotIndex,`snapshotIndex()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceshrink_shrink,`shrink()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetMapping_getMapping,`getMapping()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetFieldMapping_getFieldMapping,`getFieldMapping()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceflush_flush,`flush()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceflushSynced_flushSynced,`flushSynced()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacerefresh_refresh,`refresh()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacerecovery_recovery,`recovery()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceexistsType_existsType,`existsType()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceputAlias_putAlias,`putAlias()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceputTemplate_putTemplate,`putTemplate()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacevalidateQuery_validateQuery,`validateQuery()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetAlias_getAlias,`getAlias()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceputMapping_putMapping,`putMapping()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacedeleteMapping_deleteMapping,`deleteMapping()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetTemplate_getTemplate,`getTemplate()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceexistsTemplate_existsTemplate,`existsTemplate()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacecreate_create,`create()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceforceMerge_forceMerge,`forceMerge()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacedeleteAlias_deleteAlias,`deleteAlias()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceopen_open,`open()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceanalyze_analyze,`analyze()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceclearCache_clearCache,`clearCache()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceupdateAliases_updateAliases,`updateAliases()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetAliases_getAliases,`getAliases()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceexistsAlias_existsAlias,`existsAlias()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacestatus_status,`status()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetSettings_getSettings,`getSettings()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceclose_close,`close()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceseal_seal,`seal()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceupgrade_upgrade,`upgrade()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacegetUpgrade_getUpgrade,`getUpgrade()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespaceshardStores_shardStores,`shardStores()`>>
+* <<BeynElasticsearch_Namespaces_IndicesNamespacerollover_rollover,`rollover()`>>
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceexists_exists]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceexists_exists]]
 .`exists()`
 ****
 [source,php]
@@ -77,7 +77,7 @@ $response = $client->indices()->exists($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceget_get]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceget_get]]
 .`get()`
 ****
 [source,php]
@@ -102,7 +102,7 @@ $response = $client->indices()->get($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacesegments_segments]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacesegments_segments]]
 .`segments()`
 ****
 [source,php]
@@ -127,7 +127,7 @@ $response = $client->indices()->segments($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacedeleteTemplate_deleteTemplate]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacedeleteTemplate_deleteTemplate]]
 .`deleteTemplate()`
 ****
 [source,php]
@@ -149,7 +149,7 @@ $response = $client->indices()->deleteTemplate($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacedelete_delete]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacedelete_delete]]
 .`delete()`
 ****
 [source,php]
@@ -171,7 +171,7 @@ $response = $client->indices()->delete($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacestats_stats]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacestats_stats]]
 .`stats()`
 ****
 [source,php]
@@ -211,7 +211,7 @@ $response = $client->indices()->stats($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceputSettings_putSettings]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceputSettings_putSettings]]
 .`putSettings()`
 ****
 [source,php]
@@ -233,7 +233,7 @@ $response = $client->indices()->putSettings($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacesnapshotIndex_snapshotIndex]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacesnapshotIndex_snapshotIndex]]
 .`snapshotIndex()`
 ****
 [source,php]
@@ -257,7 +257,7 @@ $response = $client->indices()->snapshotIndex($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceshrink_shrink]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceshrink_shrink]]
 .`shrink()`
 ****
 [source,php]
@@ -281,7 +281,7 @@ $response = $client->indices()->shrink($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetMapping_getMapping]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetMapping_getMapping]]
 .`getMapping()`
 ****
 [source,php]
@@ -303,7 +303,7 @@ $response = $client->indices()->getMapping($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetFieldMapping_getFieldMapping]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetFieldMapping_getFieldMapping]]
 .`getFieldMapping()`
 ****
 [source,php]
@@ -327,7 +327,7 @@ $response = $client->indices()->getFieldMapping($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceflush_flush]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceflush_flush]]
 .`flush()`
 ****
 [source,php]
@@ -354,7 +354,7 @@ $response = $client->indices()->flush($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceflushSynced_flushSynced]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceflushSynced_flushSynced]]
 .`flushSynced()`
 ****
 [source,php]
@@ -381,7 +381,7 @@ $response = $client->indices()->flushSynced($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacerefresh_refresh]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacerefresh_refresh]]
 .`refresh()`
 ****
 [source,php]
@@ -406,7 +406,7 @@ $response = $client->indices()->refresh($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacerecovery_recovery]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacerecovery_recovery]]
 .`recovery()`
 ****
 [source,php]
@@ -430,7 +430,7 @@ $response = $client->indices()->recovery($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceexistsType_existsType]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceexistsType_existsType]]
 .`existsType()`
 ****
 [source,php]
@@ -455,7 +455,7 @@ $response = $client->indices()->existsType($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceputAlias_putAlias]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceputAlias_putAlias]]
 .`putAlias()`
 ****
 [source,php]
@@ -479,7 +479,7 @@ $response = $client->indices()->putAlias($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceputTemplate_putTemplate]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceputTemplate_putTemplate]]
 .`putTemplate()`
 ****
 [source,php]
@@ -504,7 +504,7 @@ $response = $client->indices()->putTemplate($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacevalidateQuery_validateQuery]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacevalidateQuery_validateQuery]]
 .`validateQuery()`
 ****
 [source,php]
@@ -531,7 +531,7 @@ $response = $client->indices()->validateQuery($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetAlias_getAlias]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetAlias_getAlias]]
 .`getAlias()`
 ****
 [source,php]
@@ -555,7 +555,7 @@ $response = $client->indices()->getAlias($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceputMapping_putMapping]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceputMapping_putMapping]]
 .`putMapping()`
 ****
 [source,php]
@@ -580,7 +580,7 @@ $response = $client->indices()->putMapping($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacedeleteMapping_deleteMapping]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacedeleteMapping_deleteMapping]]
 .`deleteMapping()`
 ****
 [source,php]
@@ -602,7 +602,7 @@ $response = $client->indices()->deleteMapping($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetTemplate_getTemplate]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetTemplate_getTemplate]]
 .`getTemplate()`
 ****
 [source,php]
@@ -623,7 +623,7 @@ $response = $client->indices()->getTemplate($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceexistsTemplate_existsTemplate]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceexistsTemplate_existsTemplate]]
 .`existsTemplate()`
 ****
 [source,php]
@@ -644,7 +644,7 @@ $response = $client->indices()->existsTemplate($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacecreate_create]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacecreate_create]]
 .`create()`
 ****
 [source,php]
@@ -667,7 +667,7 @@ $response = $client->indices()->create($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceforceMerge_forceMerge]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceforceMerge_forceMerge]]
 .`forceMerge()`
 ****
 [source,php]
@@ -697,7 +697,7 @@ $response = $client->indices()->forceMerge($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacedeleteAlias_deleteAlias]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacedeleteAlias_deleteAlias]]
 .`deleteAlias()`
 ****
 [source,php]
@@ -720,7 +720,7 @@ $response = $client->indices()->deleteAlias($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceopen_open]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceopen_open]]
 .`open()`
 ****
 [source,php]
@@ -742,7 +742,7 @@ $response = $client->indices()->open($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceanalyze_analyze]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceanalyze_analyze]]
 .`analyze()`
 ****
 [source,php]
@@ -775,7 +775,7 @@ $response = $client->indices()->analyze($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceclearCache_clearCache]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceclearCache_clearCache]]
 .`clearCache()`
 ****
 [source,php]
@@ -808,7 +808,7 @@ $response = $client->indices()->clearCache($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceupdateAliases_updateAliases]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceupdateAliases_updateAliases]]
 .`updateAliases()`
 ****
 [source,php]
@@ -831,7 +831,7 @@ $response = $client->indices()->updateAliases($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetAliases_getAliases]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetAliases_getAliases]]
 .`getAliases()`
 ****
 [source,php]
@@ -853,7 +853,7 @@ $response = $client->indices()->getAliases($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceexistsAlias_existsAlias]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceexistsAlias_existsAlias]]
 .`existsAlias()`
 ****
 [source,php]
@@ -878,7 +878,7 @@ $response = $client->indices()->existsAlias($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacestatus_status]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacestatus_status]]
 .`status()`
 ****
 [source,php]
@@ -903,7 +903,7 @@ $response = $client->indices()->status($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetSettings_getSettings]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetSettings_getSettings]]
 .`getSettings()`
 ****
 [source,php]
@@ -924,7 +924,7 @@ $response = $client->indices()->getSettings($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceclose_close]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceclose_close]]
 .`close()`
 ****
 [source,php]
@@ -946,7 +946,7 @@ $response = $client->indices()->close($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceseal_seal]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceseal_seal]]
 .`seal()`
 ****
 [source,php]
@@ -967,7 +967,7 @@ $response = $client->indices()->seal($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceupgrade_upgrade]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceupgrade_upgrade]]
 .`upgrade()`
 ****
 [source,php]
@@ -994,7 +994,7 @@ $response = $client->indices()->upgrade($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacegetUpgrade_getUpgrade]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacegetUpgrade_getUpgrade]]
 .`getUpgrade()`
 ****
 [source,php]
@@ -1021,7 +1021,7 @@ $response = $client->indices()->getUpgrade($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespaceshardStores_shardStores]]
+[[BeynElasticsearch_Namespaces_IndicesNamespaceshardStores_shardStores]]
 .`shardStores()`
 ****
 [source,php]
@@ -1046,7 +1046,7 @@ $response = $client->indices()->shardStores($params);
 
 
 
-[[Elasticsearch_Namespaces_IndicesNamespacerollover_rollover]]
+[[BeynElasticsearch_Namespaces_IndicesNamespacerollover_rollover]]
 .`rollover()`
 ****
 [source,php]

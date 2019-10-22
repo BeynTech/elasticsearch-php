@@ -1,10 +1,10 @@
 
-[[ElasticsearchPHP_Namespaces]]
+[[BeynElasticsearchPHP_Namespaces]]
 == Reference - Namespaces
 
 This is a complete list of available namespaces:
 
-* <<Elasticsearch, Elasticsearch>>
-* <<Elasticsearch_Namespaces, Elasticsearch\Namespaces>>
-include::Elasticsearch.asciidoc[]
-include::Elasticsearch/Namespaces.asciidoc[]
+* <<BeynElasticsearch, BeynElasticsearch>>
+* <<BeynElasticsearch_Namespaces, BeynElasticsearch\Namespaces>>
+include::BeynElasticsearch.asciidoc[]
+include::BeynElasticsearch/Namespaces.asciidoc[]

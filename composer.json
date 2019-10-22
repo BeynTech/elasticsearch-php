@@ -34,13 +34,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Elasticsearch\\": "src/Elasticsearch/"
+      "BeynElasticsearch\\": "src/Elasticsearch/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Elasticsearch\\Tests\\": "tests/Elasticsearch/Tests/",
-      "Elasticsearch\\IntegrationTests\\": "tests/Elasticsearch/IntegrationTests/"
+      "BeynElasticsearch\\Tests\\": "tests/Elasticsearch/Tests/",
+      "BeynElasticsearch\\IntegrationTests\\": "tests/Elasticsearch/IntegrationTests/"
     }
   },
   "config": {

@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace BeynElasticsearch\Endpoints;
 
-use Elasticsearch\Common\Exceptions\RuntimeException;
+use BeynElasticsearch\Common\Exceptions\RuntimeException;
 
 /**
  * Class Mget
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

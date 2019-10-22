@@ -2,20 +2,20 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch;
+namespace BeynElasticsearch;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\ConnectionPool\AbstractConnectionPool;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch\Common\Exceptions;
+use BeynElasticsearch\ConnectionPool\AbstractConnectionPool;
+use BeynElasticsearch\Connections\Connection;
+use BeynElasticsearch\Connections\ConnectionInterface;
 use GuzzleHttp\Ring\Future\FutureArrayInterface;
 use Psr\Log\LoggerInterface;
 
 /**
  * Class Transport
  *
- * @category Elasticsearch
- * @package  Elasticsearch
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

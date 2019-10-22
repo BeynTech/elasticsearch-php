@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_CatNamespace]]
-=== Elasticsearch\Namespaces\CatNamespace
+[[BeynElasticsearch_Namespaces_CatNamespace]]
+=== BeynElasticsearch\Namespaces\CatNamespace
 
 
 
@@ -12,30 +12,30 @@ Class CatNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_CatNamespacealiases_aliases,`aliases()`>>
-* <<Elasticsearch_Namespaces_CatNamespaceallocation_allocation,`allocation()`>>
-* <<Elasticsearch_Namespaces_CatNamespacecount_count,`count()`>>
-* <<Elasticsearch_Namespaces_CatNamespacehealth_health,`health()`>>
-* <<Elasticsearch_Namespaces_CatNamespacehelp_help,`help()`>>
-* <<Elasticsearch_Namespaces_CatNamespaceindices_indices,`indices()`>>
-* <<Elasticsearch_Namespaces_CatNamespacemaster_master,`master()`>>
-* <<Elasticsearch_Namespaces_CatNamespacenodes_nodes,`nodes()`>>
-* <<Elasticsearch_Namespaces_CatNamespacenodeAttrs_nodeAttrs,`nodeAttrs()`>>
-* <<Elasticsearch_Namespaces_CatNamespacependingTasks_pendingTasks,`pendingTasks()`>>
-* <<Elasticsearch_Namespaces_CatNamespacerecovery_recovery,`recovery()`>>
-* <<Elasticsearch_Namespaces_CatNamespacerepositories_repositories,`repositories()`>>
-* <<Elasticsearch_Namespaces_CatNamespaceshards_shards,`shards()`>>
-* <<Elasticsearch_Namespaces_CatNamespacesnapshots_snapshots,`snapshots()`>>
-* <<Elasticsearch_Namespaces_CatNamespacethreadPool_threadPool,`threadPool()`>>
-* <<Elasticsearch_Namespaces_CatNamespacefielddata_fielddata,`fielddata()`>>
-* <<Elasticsearch_Namespaces_CatNamespaceplugins_plugins,`plugins()`>>
-* <<Elasticsearch_Namespaces_CatNamespacesegments_segments,`segments()`>>
-* <<Elasticsearch_Namespaces_CatNamespacetasks_tasks,`tasks()`>>
-* <<Elasticsearch_Namespaces_CatNamespacetemplates_templates,`templates()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacealiases_aliases,`aliases()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespaceallocation_allocation,`allocation()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacecount_count,`count()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacehealth_health,`health()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacehelp_help,`help()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespaceindices_indices,`indices()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacemaster_master,`master()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacenodes_nodes,`nodes()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacenodeAttrs_nodeAttrs,`nodeAttrs()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacependingTasks_pendingTasks,`pendingTasks()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacerecovery_recovery,`recovery()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacerepositories_repositories,`repositories()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespaceshards_shards,`shards()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacesnapshots_snapshots,`snapshots()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacethreadPool_threadPool,`threadPool()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacefielddata_fielddata,`fielddata()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespaceplugins_plugins,`plugins()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacesegments_segments,`segments()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacetasks_tasks,`tasks()`>>
+* <<BeynElasticsearch_Namespaces_CatNamespacetemplates_templates,`templates()`>>
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacealiases_aliases]]
+[[BeynElasticsearch_Namespaces_CatNamespacealiases_aliases]]
 .`aliases()`
 ****
 [source,php]
@@ -60,7 +60,7 @@ $response = $client->cat()->aliases($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespaceallocation_allocation]]
+[[BeynElasticsearch_Namespaces_CatNamespaceallocation_allocation]]
 .`allocation()`
 ****
 [source,php]
@@ -86,7 +86,7 @@ $response = $client->cat()->allocation($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacecount_count]]
+[[BeynElasticsearch_Namespaces_CatNamespacecount_count]]
 .`count()`
 ****
 [source,php]
@@ -111,7 +111,7 @@ $response = $client->cat()->count($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacehealth_health]]
+[[BeynElasticsearch_Namespaces_CatNamespacehealth_health]]
 .`health()`
 ****
 [source,php]
@@ -137,7 +137,7 @@ $response = $client->cat()->health($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacehelp_help]]
+[[BeynElasticsearch_Namespaces_CatNamespacehelp_help]]
 .`help()`
 ****
 [source,php]
@@ -158,7 +158,7 @@ $response = $client->cat()->help($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespaceindices_indices]]
+[[BeynElasticsearch_Namespaces_CatNamespaceindices_indices]]
 .`indices()`
 ****
 [source,php]
@@ -185,7 +185,7 @@ $response = $client->cat()->indices($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacemaster_master]]
+[[BeynElasticsearch_Namespaces_CatNamespacemaster_master]]
 .`master()`
 ****
 [source,php]
@@ -210,7 +210,7 @@ $response = $client->cat()->master($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacenodes_nodes]]
+[[BeynElasticsearch_Namespaces_CatNamespacenodes_nodes]]
 .`nodes()`
 ****
 [source,php]
@@ -235,7 +235,7 @@ $response = $client->cat()->nodes($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacenodeAttrs_nodeAttrs]]
+[[BeynElasticsearch_Namespaces_CatNamespacenodeAttrs_nodeAttrs]]
 .`nodeAttrs()`
 ****
 [source,php]
@@ -260,7 +260,7 @@ $response = $client->cat()->nodeAttrs($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacependingTasks_pendingTasks]]
+[[BeynElasticsearch_Namespaces_CatNamespacependingTasks_pendingTasks]]
 .`pendingTasks()`
 ****
 [source,php]
@@ -285,7 +285,7 @@ $response = $client->cat()->pendingTasks($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacerecovery_recovery]]
+[[BeynElasticsearch_Namespaces_CatNamespacerecovery_recovery]]
 .`recovery()`
 ****
 [source,php]
@@ -311,7 +311,7 @@ $response = $client->cat()->recovery($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacerepositories_repositories]]
+[[BeynElasticsearch_Namespaces_CatNamespacerepositories_repositories]]
 .`repositories()`
 ****
 [source,php]
@@ -336,7 +336,7 @@ $response = $client->cat()->repositories($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespaceshards_shards]]
+[[BeynElasticsearch_Namespaces_CatNamespaceshards_shards]]
 .`shards()`
 ****
 [source,php]
@@ -362,7 +362,7 @@ $response = $client->cat()->shards($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacesnapshots_snapshots]]
+[[BeynElasticsearch_Namespaces_CatNamespacesnapshots_snapshots]]
 .`snapshots()`
 ****
 [source,php]
@@ -389,7 +389,7 @@ $response = $client->cat()->snapshots($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacethreadPool_threadPool]]
+[[BeynElasticsearch_Namespaces_CatNamespacethreadPool_threadPool]]
 .`threadPool()`
 ****
 [source,php]
@@ -416,7 +416,7 @@ $response = $client->cat()->threadPool($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacefielddata_fielddata]]
+[[BeynElasticsearch_Namespaces_CatNamespacefielddata_fielddata]]
 .`fielddata()`
 ****
 [source,php]
@@ -443,7 +443,7 @@ $response = $client->cat()->fielddata($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespaceplugins_plugins]]
+[[BeynElasticsearch_Namespaces_CatNamespaceplugins_plugins]]
 .`plugins()`
 ****
 [source,php]
@@ -468,7 +468,7 @@ $response = $client->cat()->plugins($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacesegments_segments]]
+[[BeynElasticsearch_Namespaces_CatNamespacesegments_segments]]
 .`segments()`
 ****
 [source,php]
@@ -491,7 +491,7 @@ $response = $client->cat()->segments($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacetasks_tasks]]
+[[BeynElasticsearch_Namespaces_CatNamespacetasks_tasks]]
 .`tasks()`
 ****
 [source,php]
@@ -515,7 +515,7 @@ $response = $client->cat()->tasks($params);
 
 
 
-[[Elasticsearch_Namespaces_CatNamespacetemplates_templates]]
+[[BeynElasticsearch_Namespaces_CatNamespacetemplates_templates]]
 .`templates()`
 ****
 [source,php]

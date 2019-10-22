@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_TasksNamespace]]
-=== Elasticsearch\Namespaces\TasksNamespace
+[[BeynElasticsearch_Namespaces_TasksNamespace]]
+=== BeynElasticsearch\Namespaces\TasksNamespace
 
 
 
@@ -12,13 +12,13 @@ Class TasksNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_TasksNamespaceget_get,`get()`>>
-* <<Elasticsearch_Namespaces_TasksNamespacetasksList_tasksList,`tasksList()`>>
-* <<Elasticsearch_Namespaces_TasksNamespacecancel_cancel,`cancel()`>>
+* <<BeynElasticsearch_Namespaces_TasksNamespaceget_get,`get()`>>
+* <<BeynElasticsearch_Namespaces_TasksNamespacetasksList_tasksList,`tasksList()`>>
+* <<BeynElasticsearch_Namespaces_TasksNamespacecancel_cancel,`cancel()`>>
 
 
 
-[[Elasticsearch_Namespaces_TasksNamespaceget_get]]
+[[BeynElasticsearch_Namespaces_TasksNamespaceget_get]]
 .`get()`
 ****
 [source,php]
@@ -39,7 +39,7 @@ $response = $client->tasks()->get($params);
 
 
 
-[[Elasticsearch_Namespaces_TasksNamespacetasksList_tasksList]]
+[[BeynElasticsearch_Namespaces_TasksNamespacetasksList_tasksList]]
 .`tasksList()`
 ****
 [source,php]
@@ -61,7 +61,7 @@ $response = $client->tasks()->tasksList($params);
 
 
 
-[[Elasticsearch_Namespaces_TasksNamespacecancel_cancel]]
+[[BeynElasticsearch_Namespaces_TasksNamespacecancel_cancel]]
 .`cancel()`
 ****
 [source,php]

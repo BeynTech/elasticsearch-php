@@ -1,5 +1,5 @@
 
-= Elasticsearch-PHP
+= BeynElasticsearch-PHP
 
 include::overview.asciidoc[]
 

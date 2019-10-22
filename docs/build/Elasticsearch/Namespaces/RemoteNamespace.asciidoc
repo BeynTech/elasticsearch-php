@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_RemoteNamespace]]
-=== Elasticsearch\Namespaces\RemoteNamespace
+[[BeynElasticsearch_Namespaces_RemoteNamespace]]
+=== BeynElasticsearch\Namespaces\RemoteNamespace
 
 
 
@@ -12,11 +12,11 @@ Class RemoteNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_RemoteNamespaceinfo_info,`info()`>>
+* <<BeynElasticsearch_Namespaces_RemoteNamespaceinfo_info,`info()`>>
 
 
 
-[[Elasticsearch_Namespaces_RemoteNamespaceinfo_info]]
+[[BeynElasticsearch_Namespaces_RemoteNamespaceinfo_info]]
 .`info()`
 ****
 [source,php]

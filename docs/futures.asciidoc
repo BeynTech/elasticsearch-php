@@ -12,7 +12,7 @@ In a single-threaded environment, the time to execute `n` requests is the sum of
 the multi interface, the time to execute `n` requests is the latency of the slowest request (assuming enough handles
 are available to execute all requests in parallel).
 
-Furthermore, the multi-interface allows requests to different hosts simultaneously, which means the Elasticsearch-PHP
+Furthermore, the multi-interface allows requests to different hosts simultaneously, which means the BeynElasticsearch-PHP
 client can more effectively utilize your full cluster.
 
 === Using Future Mode
@@ -246,6 +246,6 @@ or false under normal operation.
 
 When operated in future mode, unwrapping of the future is left to your application,
 which means the client can no longer inspect the response and return a simple true/false.  Instead, you'll see the raw
-response from Elasticsearch and will have to take action appropriately.
+response from BeynElasticsearch and will have to take action appropriately.
 
 This also applies to `ping()`.

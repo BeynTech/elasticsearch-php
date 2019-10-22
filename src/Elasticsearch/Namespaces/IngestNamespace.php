@@ -2,19 +2,19 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace BeynElasticsearch\Namespaces;
 
-use Elasticsearch\Endpoints\Ingest\Pipeline\Delete;
-use Elasticsearch\Endpoints\Ingest\Pipeline\Get;
-use Elasticsearch\Endpoints\Ingest\Pipeline\ProcessorGrok;
-use Elasticsearch\Endpoints\Ingest\Pipeline\Put;
-use Elasticsearch\Endpoints\Ingest\Simulate;
+use BeynElasticsearch\Endpoints\Ingest\Pipeline\Delete;
+use BeynElasticsearch\Endpoints\Ingest\Pipeline\Get;
+use BeynElasticsearch\Endpoints\Ingest\Pipeline\ProcessorGrok;
+use BeynElasticsearch\Endpoints\Ingest\Pipeline\Put;
+use BeynElasticsearch\Endpoints\Ingest\Simulate;
 
 /**
  * Class IngestNamespace
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\IngestNamespace
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Namespaces\IngestNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

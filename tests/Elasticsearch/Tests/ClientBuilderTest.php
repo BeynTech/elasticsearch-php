@@ -2,11 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests;
+namespace BeynElasticsearch\Tests;
 
-use Elasticsearch\ClientBuilder;
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Tests\ClientBuilder\DummyLogger;
+use BeynElasticsearch\ClientBuilder;
+use BeynElasticsearch\Common\Exceptions\InvalidArgumentException;
+use BeynElasticsearch\Tests\ClientBuilder\DummyLogger;
 use PHPUnit\Framework\TestCase;
 
 class ClientBuilderTest extends TestCase

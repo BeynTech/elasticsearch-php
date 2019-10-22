@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Helper\Iterators;
+namespace BeynElasticsearch\Helper\Iterators;
 
-use Elasticsearch\Client;
+use BeynElasticsearch\Client;
 use Iterator;
 
 /**
  * Class SearchResponseIterator
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Helper\Iterators
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Helper\Iterators
  * @author   Arturo Mejia <arturo.mejia@kreatetechnology.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

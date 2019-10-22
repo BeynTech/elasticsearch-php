@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace BeynElasticsearch\Namespaces;
 
 /**
  * Class ClusterNamespace
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\ClusterNamespace
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Namespaces\ClusterNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -46,7 +46,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Health $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Health $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Health');
         $endpoint->setIndex($index);
@@ -81,7 +81,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Reroute $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Reroute $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Reroute');
         $endpoint->setBody($body);
@@ -120,7 +120,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\State $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\State $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\State');
         $endpoint->setParams($params)
@@ -152,7 +152,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Stats $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Stats $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Stats');
         $endpoint->setNodeID($nodeID)
@@ -184,7 +184,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Settings\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Settings\Put $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Settings\Put');
         $endpoint->setBody($body);
@@ -214,7 +214,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\Settings\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\Settings\Put $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\Settings\Get');
         $endpoint->setParams($params);
@@ -241,7 +241,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\PendingTasks $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\PendingTasks $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\PendingTasks');
         $endpoint->setParams($params);
@@ -271,7 +271,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\AllocationExplain $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\AllocationExplain $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\AllocationExplain');
         $endpoint->setBody($body)
@@ -295,7 +295,7 @@ class ClusterNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Cluster\RemoteInfo $endpoint
+ * @var \BeynElasticsearch\Endpoints\Cluster\RemoteInfo $endpoint
 */
         $endpoint = $endpointBuilder('Cluster\RemoteInfo');
 

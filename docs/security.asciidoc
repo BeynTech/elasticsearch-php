@@ -1,11 +1,11 @@
 [[security]]
 == Security
 
-The Elasticsearch-PHP client supports two security features: HTTP Authentication and SSL encryption.
+The BeynElasticsearch-PHP client supports two security features: HTTP Authentication and SSL encryption.
 
 === HTTP Authentication
 
-If your Elasticsearch server is protected by HTTP Authentication, you need to provide the credentials to ES-PHP so
+If your BeynElasticsearch server is protected by HTTP Authentication, you need to provide the credentials to ES-PHP so
 that requests can be authenticated server-side.  Authentication credentials are provided as part of the host array
 when instantiating the client:
 
@@ -26,7 +26,7 @@ cluster will use the appropriate credentials depending on the node being talked 
 
 === ApiKey Authentication
 
-If your Elasticsearch cluster is secured by API keys as described https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-create-api-key.html[here], you can use these values to connect the client with your cluster, as illustrated in the following code snippet.
+If your BeynElasticsearch cluster is secured by API keys as described https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-create-api-key.html[here], you can use these values to connect the client with your cluster, as illustrated in the following code snippet.
 
 [source,php]
 ----

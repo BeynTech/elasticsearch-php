@@ -13,7 +13,7 @@
     </php>
     <testsuites>
         <testsuite name="Integration Tests">
-            <file>tests/Elasticsearch/Tests/YamlRunnerTest.php</file>
+            <file>tests/BeynElasticsearch/Tests/YamlRunnerTest.php</file>
         </testsuite>
     </testsuites>
     <filter>

@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\ConnectionPool\Selectors;
+namespace BeynElasticsearch\Tests\ConnectionPool\Selectors;
 
-use Elasticsearch;
-use Elasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch;
+use BeynElasticsearch\Connections\ConnectionInterface;
 
 /**
  * Class SnifferTest
  *
  * @category   Tests
- * @package    Elasticsearch
+ * @package    BeynElasticsearch
  * @subpackage Tests\ConnectionPool\RoundRobinSelectorTest
  * @author     Zachary Tong <zachary.tong@elasticsearch.com>
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache2
@@ -22,13 +22,13 @@ class RoundRobinSelectorTest extends \PHPUnit\Framework\TestCase
     /**
      * Add Ten connections, select 15 to verify round robin
      *
-     * @covers \Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector::select
+     * @covers \BeynElasticsearch\ConnectionPool\Selectors\RoundRobinSelector::select
      *
      * @return void
      */
     public function testTenConnections()
     {
-        $roundRobin = new Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector();
+        $roundRobin = new BeynElasticsearch\ConnectionPool\Selectors\RoundRobinSelector();
 
         $mockConnections = [];
         foreach (range(0, 9) as $index) {
@@ -61,13 +61,13 @@ class RoundRobinSelectorTest extends \PHPUnit\Framework\TestCase
      * Add Ten connections, select five, remove three, test another 10 to check
      * that the round-robining works after removing connections
      *
-     * @covers \Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector::select
+     * @covers \BeynElasticsearch\ConnectionPool\Selectors\RoundRobinSelector::select
      *
      * @return void
      */
     public function testAddTenConnectionsTestFiveRemoveThreeTestTen()
     {
-        $roundRobin = new Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector();
+        $roundRobin = new BeynElasticsearch\ConnectionPool\Selectors\RoundRobinSelector();
 
         $mockConnections = [];
         foreach (range(0, 9) as $index) {

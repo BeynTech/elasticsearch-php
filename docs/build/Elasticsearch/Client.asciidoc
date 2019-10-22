@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Client]]
-=== Elasticsearch\Client
+[[BeynElasticsearch_Client]]
+=== BeynElasticsearch\Client
 
 
 
@@ -12,58 +12,58 @@ Class Client
 
 The class defines the following methods:
 
-* <<Elasticsearch_Clientinfo_info,`info()`>>
-* <<Elasticsearch_Clientping_ping,`ping()`>>
-* <<Elasticsearch_Clientget_get,`get()`>>
-* <<Elasticsearch_ClientgetSource_getSource,`getSource()`>>
-* <<Elasticsearch_Clientdelete_delete,`delete()`>>
-* <<Elasticsearch_ClientdeleteByQuery_deleteByQuery,`deleteByQuery()`>>
-* <<Elasticsearch_Clientcount_count,`count()`>>
-* <<Elasticsearch_ClientcountPercolate_countPercolate,`countPercolate()`>>
-* <<Elasticsearch_Clientpercolate_percolate,`percolate()`>>
-* <<Elasticsearch_Clientmpercolate_mpercolate,`mpercolate()`>>
-* <<Elasticsearch_Clienttermvectors_termvectors,`termvectors()`>>
-* <<Elasticsearch_Clientmtermvectors_mtermvectors,`mtermvectors()`>>
-* <<Elasticsearch_Clientexists_exists,`exists()`>>
-* <<Elasticsearch_Clientmget_mget,`mget()`>>
-* <<Elasticsearch_Clientmsearch_msearch,`msearch()`>>
-* <<Elasticsearch_ClientmsearchTemplate_msearchTemplate,`msearchTemplate()`>>
-* <<Elasticsearch_Clientcreate_create,`create()`>>
-* <<Elasticsearch_Clientbulk_bulk,`bulk()`>>
-* <<Elasticsearch_Clientindex_index,`index()`>>
-* <<Elasticsearch_Clientreindex_reindex,`reindex()`>>
-* <<Elasticsearch_Clientsuggest_suggest,`suggest()`>>
-* <<Elasticsearch_Clientexplain_explain,`explain()`>>
-* <<Elasticsearch_Clientsearch_search,`search()`>>
-* <<Elasticsearch_ClientsearchShards_searchShards,`searchShards()`>>
-* <<Elasticsearch_ClientsearchTemplate_searchTemplate,`searchTemplate()`>>
-* <<Elasticsearch_Clientscroll_scroll,`scroll()`>>
-* <<Elasticsearch_ClientclearScroll_clearScroll,`clearScroll()`>>
-* <<Elasticsearch_Clientupdate_update,`update()`>>
-* <<Elasticsearch_ClientupdateByQuery_updateByQuery,`updateByQuery()`>>
-* <<Elasticsearch_ClientgetScript_getScript,`getScript()`>>
-* <<Elasticsearch_ClientdeleteScript_deleteScript,`deleteScript()`>>
-* <<Elasticsearch_ClientputScript_putScript,`putScript()`>>
-* <<Elasticsearch_ClientgetTemplate_getTemplate,`getTemplate()`>>
-* <<Elasticsearch_ClientdeleteTemplate_deleteTemplate,`deleteTemplate()`>>
-* <<Elasticsearch_ClientfieldStats_fieldStats,`fieldStats()`>>
-* <<Elasticsearch_ClientfieldCaps_fieldCaps,`fieldCaps()`>>
-* <<Elasticsearch_ClientrenderSearchTemplate_renderSearchTemplate,`renderSearchTemplate()`>>
-* <<Elasticsearch_Clientindices_indices,`indices()`>>
-* <<Elasticsearch_Clientcluster_cluster,`cluster()`>>
-* <<Elasticsearch_Clientnodes_nodes,`nodes()`>>
-* <<Elasticsearch_Clientsnapshot_snapshot,`snapshot()`>>
-* <<Elasticsearch_Clientcat_cat,`cat()`>>
-* <<Elasticsearch_Clientingest_ingest,`ingest()`>>
-* <<Elasticsearch_Clienttasks_tasks,`tasks()`>>
-* <<Elasticsearch_Clientremote_remote,`remote()`>>
-* <<Elasticsearch_Client-call-_call,`__call()`>>
-* <<Elasticsearch_ClientextractArgument_extractArgument,`extractArgument()`>>
+* <<BeynElasticsearch_Clientinfo_info,`info()`>>
+* <<BeynElasticsearch_Clientping_ping,`ping()`>>
+* <<BeynElasticsearch_Clientget_get,`get()`>>
+* <<BeynElasticsearch_ClientgetSource_getSource,`getSource()`>>
+* <<BeynElasticsearch_Clientdelete_delete,`delete()`>>
+* <<BeynElasticsearch_ClientdeleteByQuery_deleteByQuery,`deleteByQuery()`>>
+* <<BeynElasticsearch_Clientcount_count,`count()`>>
+* <<BeynElasticsearch_ClientcountPercolate_countPercolate,`countPercolate()`>>
+* <<BeynElasticsearch_Clientpercolate_percolate,`percolate()`>>
+* <<BeynElasticsearch_Clientmpercolate_mpercolate,`mpercolate()`>>
+* <<BeynElasticsearch_Clienttermvectors_termvectors,`termvectors()`>>
+* <<BeynElasticsearch_Clientmtermvectors_mtermvectors,`mtermvectors()`>>
+* <<BeynElasticsearch_Clientexists_exists,`exists()`>>
+* <<BeynElasticsearch_Clientmget_mget,`mget()`>>
+* <<BeynElasticsearch_Clientmsearch_msearch,`msearch()`>>
+* <<BeynElasticsearch_ClientmsearchTemplate_msearchTemplate,`msearchTemplate()`>>
+* <<BeynElasticsearch_Clientcreate_create,`create()`>>
+* <<BeynElasticsearch_Clientbulk_bulk,`bulk()`>>
+* <<BeynElasticsearch_Clientindex_index,`index()`>>
+* <<BeynElasticsearch_Clientreindex_reindex,`reindex()`>>
+* <<BeynElasticsearch_Clientsuggest_suggest,`suggest()`>>
+* <<BeynElasticsearch_Clientexplain_explain,`explain()`>>
+* <<BeynElasticsearch_Clientsearch_search,`search()`>>
+* <<BeynElasticsearch_ClientsearchShards_searchShards,`searchShards()`>>
+* <<BeynElasticsearch_ClientsearchTemplate_searchTemplate,`searchTemplate()`>>
+* <<BeynElasticsearch_Clientscroll_scroll,`scroll()`>>
+* <<BeynElasticsearch_ClientclearScroll_clearScroll,`clearScroll()`>>
+* <<BeynElasticsearch_Clientupdate_update,`update()`>>
+* <<BeynElasticsearch_ClientupdateByQuery_updateByQuery,`updateByQuery()`>>
+* <<BeynElasticsearch_ClientgetScript_getScript,`getScript()`>>
+* <<BeynElasticsearch_ClientdeleteScript_deleteScript,`deleteScript()`>>
+* <<BeynElasticsearch_ClientputScript_putScript,`putScript()`>>
+* <<BeynElasticsearch_ClientgetTemplate_getTemplate,`getTemplate()`>>
+* <<BeynElasticsearch_ClientdeleteTemplate_deleteTemplate,`deleteTemplate()`>>
+* <<BeynElasticsearch_ClientfieldStats_fieldStats,`fieldStats()`>>
+* <<BeynElasticsearch_ClientfieldCaps_fieldCaps,`fieldCaps()`>>
+* <<BeynElasticsearch_ClientrenderSearchTemplate_renderSearchTemplate,`renderSearchTemplate()`>>
+* <<BeynElasticsearch_Clientindices_indices,`indices()`>>
+* <<BeynElasticsearch_Clientcluster_cluster,`cluster()`>>
+* <<BeynElasticsearch_Clientnodes_nodes,`nodes()`>>
+* <<BeynElasticsearch_Clientsnapshot_snapshot,`snapshot()`>>
+* <<BeynElasticsearch_Clientcat_cat,`cat()`>>
+* <<BeynElasticsearch_Clientingest_ingest,`ingest()`>>
+* <<BeynElasticsearch_Clienttasks_tasks,`tasks()`>>
+* <<BeynElasticsearch_Clientremote_remote,`remote()`>>
+* <<BeynElasticsearch_Client-call-_call,`__call()`>>
+* <<BeynElasticsearch_ClientextractArgument_extractArgument,`extractArgument()`>>
 
 
 
 
-[[Elasticsearch_Clientinfo_info]]
+[[BeynElasticsearch_Clientinfo_info]]
 .`info()`
 ****
 [source,php]
@@ -82,7 +82,7 @@ $response = $client->info($params);
 
 
 
-[[Elasticsearch_Clientping_ping]]
+[[BeynElasticsearch_Clientping_ping]]
 .`ping()`
 ****
 [source,php]
@@ -101,7 +101,7 @@ $response = $client->ping($params);
 
 
 
-[[Elasticsearch_Clientget_get]]
+[[BeynElasticsearch_Clientget_get]]
 .`get()`
 ****
 [source,php]
@@ -134,7 +134,7 @@ $response = $client->get($params);
 
 
 
-[[Elasticsearch_ClientgetSource_getSource]]
+[[BeynElasticsearch_ClientgetSource_getSource]]
 .`getSource()`
 ****
 [source,php]
@@ -163,7 +163,7 @@ $response = $client->getSource($params);
 
 
 
-[[Elasticsearch_Clientdelete_delete]]
+[[BeynElasticsearch_Clientdelete_delete]]
 .`delete()`
 ****
 [source,php]
@@ -193,7 +193,7 @@ $response = $client->delete($params);
 
 
 
-[[Elasticsearch_ClientdeleteByQuery_deleteByQuery]]
+[[BeynElasticsearch_ClientdeleteByQuery_deleteByQuery]]
 .`deleteByQuery()`
 ****
 [source,php]
@@ -223,7 +223,7 @@ $response = $client->deleteByQuery($params);
 
 
 
-[[Elasticsearch_Clientcount_count]]
+[[BeynElasticsearch_Clientcount_count]]
 .`count()`
 ****
 [source,php]
@@ -253,7 +253,7 @@ $response = $client->count($params);
 
 
 
-[[Elasticsearch_ClientcountPercolate_countPercolate]]
+[[BeynElasticsearch_ClientcountPercolate_countPercolate]]
 .`countPercolate()`
 ****
 [source,php]
@@ -283,7 +283,7 @@ $response = $client->countPercolate($params);
 
 
 
-[[Elasticsearch_Clientpercolate_percolate]]
+[[BeynElasticsearch_Clientpercolate_percolate]]
 .`percolate()`
 ****
 [source,php]
@@ -307,7 +307,7 @@ $response = $client->percolate($params);
 
 
 
-[[Elasticsearch_Clientmpercolate_mpercolate]]
+[[BeynElasticsearch_Clientmpercolate_mpercolate]]
 .`mpercolate()`
 ****
 [source,php]
@@ -332,7 +332,7 @@ $response = $client->mpercolate($params);
 
 
 
-[[Elasticsearch_Clienttermvectors_termvectors]]
+[[BeynElasticsearch_Clienttermvectors_termvectors]]
 .`termvectors()`
 ****
 [source,php]
@@ -360,7 +360,7 @@ $response = $client->termvectors($params);
 
 
 
-[[Elasticsearch_Clientmtermvectors_mtermvectors]]
+[[BeynElasticsearch_Clientmtermvectors_mtermvectors]]
 .`mtermvectors()`
 ****
 [source,php]
@@ -389,7 +389,7 @@ $response = $client->mtermvectors($params);
 
 
 
-[[Elasticsearch_Clientexists_exists]]
+[[BeynElasticsearch_Clientexists_exists]]
 .`exists()`
 ****
 [source,php]
@@ -417,7 +417,7 @@ $response = $client->exists($params);
 
 
 
-[[Elasticsearch_Clientmget_mget]]
+[[BeynElasticsearch_Clientmget_mget]]
 .`mget()`
 ****
 [source,php]
@@ -446,7 +446,7 @@ $response = $client->mget($params);
 
 
 
-[[Elasticsearch_Clientmsearch_msearch]]
+[[BeynElasticsearch_Clientmsearch_msearch]]
 .`msearch()`
 ****
 [source,php]
@@ -470,7 +470,7 @@ $response = $client->msearch($params);
 
 
 
-[[Elasticsearch_ClientmsearchTemplate_msearchTemplate]]
+[[BeynElasticsearch_ClientmsearchTemplate_msearchTemplate]]
 .`msearchTemplate()`
 ****
 [source,php]
@@ -495,7 +495,7 @@ $response = $client->msearchTemplate($params);
 
 
 
-[[Elasticsearch_Clientcreate_create]]
+[[BeynElasticsearch_Clientcreate_create]]
 .`create()`
 ****
 [source,php]
@@ -529,7 +529,7 @@ $response = $client->create($params);
 
 
 
-[[Elasticsearch_Clientbulk_bulk]]
+[[BeynElasticsearch_Clientbulk_bulk]]
 .`bulk()`
 ****
 [source,php]
@@ -556,7 +556,7 @@ $response = $client->bulk($params);
 
 
 
-[[Elasticsearch_Clientindex_index]]
+[[BeynElasticsearch_Clientindex_index]]
 .`index()`
 ****
 [source,php]
@@ -591,7 +591,7 @@ $response = $client->index($params);
 
 
 
-[[Elasticsearch_Clientreindex_reindex]]
+[[BeynElasticsearch_Clientreindex_reindex]]
 .`reindex()`
 ****
 [source,php]
@@ -617,7 +617,7 @@ $response = $client->reindex($params);
 
 
 
-[[Elasticsearch_Clientsuggest_suggest]]
+[[BeynElasticsearch_Clientsuggest_suggest]]
 .`suggest()`
 ****
 [source,php]
@@ -643,7 +643,7 @@ $response = $client->suggest($params);
 
 
 
-[[Elasticsearch_Clientexplain_explain]]
+[[BeynElasticsearch_Clientexplain_explain]]
 .`explain()`
 ****
 [source,php]
@@ -682,7 +682,7 @@ $response = $client->explain($params);
 
 
 
-[[Elasticsearch_Clientsearch_search]]
+[[BeynElasticsearch_Clientsearch_search]]
 .`search()`
 ****
 [source,php]
@@ -735,7 +735,7 @@ $response = $client->search($params);
 
 
 
-[[Elasticsearch_ClientsearchShards_searchShards]]
+[[BeynElasticsearch_ClientsearchShards_searchShards]]
 .`searchShards()`
 ****
 [source,php]
@@ -763,7 +763,7 @@ $response = $client->searchShards($params);
 
 
 
-[[Elasticsearch_ClientsearchTemplate_searchTemplate]]
+[[BeynElasticsearch_ClientsearchTemplate_searchTemplate]]
 .`searchTemplate()`
 ****
 [source,php]
@@ -785,7 +785,7 @@ $response = $client->searchTemplate($params);
 
 
 
-[[Elasticsearch_Clientscroll_scroll]]
+[[BeynElasticsearch_Clientscroll_scroll]]
 .`scroll()`
 ****
 [source,php]
@@ -808,7 +808,7 @@ $response = $client->scroll($params);
 
 
 
-[[Elasticsearch_ClientclearScroll_clearScroll]]
+[[BeynElasticsearch_ClientclearScroll_clearScroll]]
 .`clearScroll()`
 ****
 [source,php]
@@ -831,7 +831,7 @@ $response = $client->clearScroll($params);
 
 
 
-[[Elasticsearch_Clientupdate_update]]
+[[BeynElasticsearch_Clientupdate_update]]
 .`update()`
 ****
 [source,php]
@@ -868,7 +868,7 @@ $response = $client->update($params);
 
 
 
-[[Elasticsearch_ClientupdateByQuery_updateByQuery]]
+[[BeynElasticsearch_ClientupdateByQuery_updateByQuery]]
 .`updateByQuery()`
 ****
 [source,php]
@@ -924,7 +924,7 @@ $response = $client->updateByQuery($params);
 
 
 
-[[Elasticsearch_ClientgetScript_getScript]]
+[[BeynElasticsearch_ClientgetScript_getScript]]
 .`getScript()`
 ****
 [source,php]
@@ -945,7 +945,7 @@ $response = $client->getScript($params);
 
 
 
-[[Elasticsearch_ClientdeleteScript_deleteScript]]
+[[BeynElasticsearch_ClientdeleteScript_deleteScript]]
 .`deleteScript()`
 ****
 [source,php]
@@ -966,7 +966,7 @@ $response = $client->deleteScript($params);
 
 
 
-[[Elasticsearch_ClientputScript_putScript]]
+[[BeynElasticsearch_ClientputScript_putScript]]
 .`putScript()`
 ****
 [source,php]
@@ -987,7 +987,7 @@ $response = $client->putScript($params);
 
 
 
-[[Elasticsearch_ClientgetTemplate_getTemplate]]
+[[BeynElasticsearch_ClientgetTemplate_getTemplate]]
 .`getTemplate()`
 ****
 [source,php]
@@ -1008,7 +1008,7 @@ $response = $client->getTemplate($params);
 
 
 
-[[Elasticsearch_ClientdeleteTemplate_deleteTemplate]]
+[[BeynElasticsearch_ClientdeleteTemplate_deleteTemplate]]
 .`deleteTemplate()`
 ****
 [source,php]
@@ -1029,7 +1029,7 @@ $response = $client->deleteTemplate($params);
 
 
 
-[[Elasticsearch_ClientfieldStats_fieldStats]]
+[[BeynElasticsearch_ClientfieldStats_fieldStats]]
 .`fieldStats()`
 ****
 [source,php]
@@ -1055,7 +1055,7 @@ $response = $client->fieldStats($params);
 
 
 
-[[Elasticsearch_ClientfieldCaps_fieldCaps]]
+[[BeynElasticsearch_ClientfieldCaps_fieldCaps]]
 .`fieldCaps()`
 ****
 [source,php]
@@ -1079,7 +1079,7 @@ $response = $client->fieldCaps($params);
 
 
 
-[[Elasticsearch_ClientrenderSearchTemplate_renderSearchTemplate]]
+[[BeynElasticsearch_ClientrenderSearchTemplate_renderSearchTemplate]]
 .`renderSearchTemplate()`
 ****
 [source,php]
@@ -1100,7 +1100,7 @@ $response = $client->renderSearchTemplate($params);
 
 
 
-[[Elasticsearch_Clientindices_indices]]
+[[BeynElasticsearch_Clientindices_indices]]
 .`indices()`
 ****
 [source,php]
@@ -1121,7 +1121,7 @@ $response = $client->indices();
 
 
 
-[[Elasticsearch_Clientcluster_cluster]]
+[[BeynElasticsearch_Clientcluster_cluster]]
 .`cluster()`
 ****
 [source,php]
@@ -1142,7 +1142,7 @@ $response = $client->cluster();
 
 
 
-[[Elasticsearch_Clientnodes_nodes]]
+[[BeynElasticsearch_Clientnodes_nodes]]
 .`nodes()`
 ****
 [source,php]
@@ -1163,7 +1163,7 @@ $response = $client->nodes();
 
 
 
-[[Elasticsearch_Clientsnapshot_snapshot]]
+[[BeynElasticsearch_Clientsnapshot_snapshot]]
 .`snapshot()`
 ****
 [source,php]
@@ -1184,7 +1184,7 @@ $response = $client->snapshot();
 
 
 
-[[Elasticsearch_Clientcat_cat]]
+[[BeynElasticsearch_Clientcat_cat]]
 .`cat()`
 ****
 [source,php]
@@ -1205,7 +1205,7 @@ $response = $client->cat();
 
 
 
-[[Elasticsearch_Clientingest_ingest]]
+[[BeynElasticsearch_Clientingest_ingest]]
 .`ingest()`
 ****
 [source,php]
@@ -1226,7 +1226,7 @@ $response = $client->ingest();
 
 
 
-[[Elasticsearch_Clienttasks_tasks]]
+[[BeynElasticsearch_Clienttasks_tasks]]
 .`tasks()`
 ****
 [source,php]
@@ -1247,7 +1247,7 @@ $response = $client->tasks();
 
 
 
-[[Elasticsearch_Clientremote_remote]]
+[[BeynElasticsearch_Clientremote_remote]]
 .`remote()`
 ****
 [source,php]
@@ -1268,7 +1268,7 @@ $response = $client->remote();
 
 
 
-[[Elasticsearch_Client-call-_call]]
+[[BeynElasticsearch_Client-call-_call]]
 .`__call()`
 ****
 [source,php]
@@ -1289,7 +1289,7 @@ $response = $client->__call($name,$arguments);
 
 
 
-[[Elasticsearch_ClientextractArgument_extractArgument]]
+[[BeynElasticsearch_ClientextractArgument_extractArgument]]
 .`extractArgument()`
 ****
 [source,php]

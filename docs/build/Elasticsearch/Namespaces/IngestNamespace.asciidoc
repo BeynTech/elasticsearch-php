@@ -1,7 +1,7 @@
 
 
-[[Elasticsearch_Namespaces_IngestNamespace]]
-=== Elasticsearch\Namespaces\IngestNamespace
+[[BeynElasticsearch_Namespaces_IngestNamespace]]
+=== BeynElasticsearch\Namespaces\IngestNamespace
 
 
 
@@ -12,15 +12,15 @@ Class IngestNamespace
 
 The class defines the following methods:
 
-* <<Elasticsearch_Namespaces_IngestNamespacedeletePipeline_deletePipeline,`deletePipeline()`>>
-* <<Elasticsearch_Namespaces_IngestNamespacegetPipeline_getPipeline,`getPipeline()`>>
-* <<Elasticsearch_Namespaces_IngestNamespaceputPipeline_putPipeline,`putPipeline()`>>
-* <<Elasticsearch_Namespaces_IngestNamespacesimulate_simulate,`simulate()`>>
-* <<Elasticsearch_Namespaces_IngestNamespaceprocessorGrok_processorGrok,`processorGrok()`>>
+* <<BeynElasticsearch_Namespaces_IngestNamespacedeletePipeline_deletePipeline,`deletePipeline()`>>
+* <<BeynElasticsearch_Namespaces_IngestNamespacegetPipeline_getPipeline,`getPipeline()`>>
+* <<BeynElasticsearch_Namespaces_IngestNamespaceputPipeline_putPipeline,`putPipeline()`>>
+* <<BeynElasticsearch_Namespaces_IngestNamespacesimulate_simulate,`simulate()`>>
+* <<BeynElasticsearch_Namespaces_IngestNamespaceprocessorGrok_processorGrok,`processorGrok()`>>
 
 
 
-[[Elasticsearch_Namespaces_IngestNamespacedeletePipeline_deletePipeline]]
+[[BeynElasticsearch_Namespaces_IngestNamespacedeletePipeline_deletePipeline]]
 .`deletePipeline()`
 ****
 [source,php]
@@ -42,7 +42,7 @@ $response = $client->ingest()->deletePipeline($params);
 
 
 
-[[Elasticsearch_Namespaces_IngestNamespacegetPipeline_getPipeline]]
+[[BeynElasticsearch_Namespaces_IngestNamespacegetPipeline_getPipeline]]
 .`getPipeline()`
 ****
 [source,php]
@@ -63,7 +63,7 @@ $response = $client->ingest()->getPipeline($params);
 
 
 
-[[Elasticsearch_Namespaces_IngestNamespaceputPipeline_putPipeline]]
+[[BeynElasticsearch_Namespaces_IngestNamespaceputPipeline_putPipeline]]
 .`putPipeline()`
 ****
 [source,php]
@@ -85,7 +85,7 @@ $response = $client->ingest()->putPipeline($params);
 
 
 
-[[Elasticsearch_Namespaces_IngestNamespacesimulate_simulate]]
+[[BeynElasticsearch_Namespaces_IngestNamespacesimulate_simulate]]
 .`simulate()`
 ****
 [source,php]
@@ -106,7 +106,7 @@ $response = $client->ingest()->simulate($params);
 
 
 
-[[Elasticsearch_Namespaces_IngestNamespaceprocessorGrok_processorGrok]]
+[[BeynElasticsearch_Namespaces_IngestNamespaceprocessorGrok_processorGrok]]
 .`processorGrok()`
 ****
 [source,php]

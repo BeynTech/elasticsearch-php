@@ -2,18 +2,18 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests;
+namespace BeynElasticsearch\Tests;
 
-use Elasticsearch\ClientBuilder;
-use Elasticsearch\Common\Exceptions\Missing404Exception;
-use Elasticsearch\Tests\ClientBuilder\ArrayLogger;
+use BeynElasticsearch\ClientBuilder;
+use BeynElasticsearch\Common\Exceptions\Missing404Exception;
+use BeynElasticsearch\Tests\ClientBuilder\ArrayLogger;
 use Psr\Log\LogLevel;
 
 /**
  * Class ClientTest
  *
  * @category   Tests
- * @package    Elasticsearch
+ * @package    BeynElasticsearch
  * @subpackage Tests
  * @author     Zachary Tong <zachary.tong@elasticsearch.com>
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache2

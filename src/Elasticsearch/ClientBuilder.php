@@ -2,23 +2,23 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch;
+namespace BeynElasticsearch;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Common\Exceptions\RuntimeException;
-use Elasticsearch\Common\Exceptions\ElasticCloudIdParseException;
-use Elasticsearch\Common\Exceptions\AuthenticationConfigException;
-use Elasticsearch\ConnectionPool\AbstractConnectionPool;
-use Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector;
-use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
-use Elasticsearch\ConnectionPool\StaticNoPingConnectionPool;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionFactory;
-use Elasticsearch\Connections\ConnectionFactoryInterface;
-use Elasticsearch\Namespaces\NamespaceBuilderInterface;
-use Elasticsearch\Serializers\SerializerInterface;
-use Elasticsearch\ConnectionPool\Selectors;
-use Elasticsearch\Serializers\SmartSerializer;
+use BeynElasticsearch\Common\Exceptions\InvalidArgumentException;
+use BeynElasticsearch\Common\Exceptions\RuntimeException;
+use BeynElasticsearch\Common\Exceptions\ElasticCloudIdParseException;
+use BeynElasticsearch\Common\Exceptions\AuthenticationConfigException;
+use BeynElasticsearch\ConnectionPool\AbstractConnectionPool;
+use BeynElasticsearch\ConnectionPool\Selectors\RoundRobinSelector;
+use BeynElasticsearch\ConnectionPool\Selectors\SelectorInterface;
+use BeynElasticsearch\ConnectionPool\StaticNoPingConnectionPool;
+use BeynElasticsearch\Connections\Connection;
+use BeynElasticsearch\Connections\ConnectionFactory;
+use BeynElasticsearch\Connections\ConnectionFactoryInterface;
+use BeynElasticsearch\Namespaces\NamespaceBuilderInterface;
+use BeynElasticsearch\Serializers\SerializerInterface;
+use BeynElasticsearch\ConnectionPool\Selectors;
+use BeynElasticsearch\Serializers\SmartSerializer;
 use GuzzleHttp\Ring\Client\CurlHandler;
 use GuzzleHttp\Ring\Client\CurlMultiHandler;
 use GuzzleHttp\Ring\Client\Middleware;
@@ -28,8 +28,8 @@ use Psr\Log\NullLogger;
 /**
  * Class ClientBuilder
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Common\Exceptions
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -203,7 +203,7 @@ class ClientBuilder
                 $default = new CurlMultiHandler($config);
             }
         } else {
-            throw new \RuntimeException('Elasticsearch-PHP requires cURL, or a custom HTTP handler.');
+            throw new \RuntimeException('BeynElasticsearch-PHP requires cURL, or a custom HTTP handler.');
         }
 
         return $future ? Middleware::wrapFuture($default, $future) : $default;
@@ -313,7 +313,7 @@ class ClientBuilder
     }
 
     /**
-     * @param \Elasticsearch\Serializers\SerializerInterface|string $serializer
+     * @param \BeynElasticsearch\Serializers\SerializerInterface|string $serializer
      */
     public function setSerializer($serializer): ClientBuilder
     {
@@ -334,7 +334,7 @@ class ClientBuilder
      *
      * @link https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-create-api-key.html
      *
-     * @throws Elasticsearch\Common\Exceptions\AuthenticationConfigException
+     * @throws BeynElasticsearch\Common\Exceptions\AuthenticationConfigException
      */
     public function setApiKey(string $id, string $apiKey): ClientBuilder
     {
@@ -355,7 +355,7 @@ class ClientBuilder
      * @param string $username
      * @param string $password
      *
-     * @throws Elasticsearch\Common\Exceptions\AuthenticationConfigException
+     * @throws BeynElasticsearch\Common\Exceptions\AuthenticationConfigException
      */
     public function setBasicAuthentication(string $username, string $password): ClientBuilder
     {
@@ -420,7 +420,7 @@ class ClientBuilder
     }
 
     /**
-     * @param \Elasticsearch\ConnectionPool\Selectors\SelectorInterface|string $selector
+     * @param \BeynElasticsearch\ConnectionPool\Selectors\SelectorInterface|string $selector
      */
     public function setSelector($selector): ClientBuilder
     {
@@ -542,7 +542,7 @@ class ClientBuilder
             $serializer = $this->serializer;
 
             $this->endpoint = function ($class) use ($serializer) {
-                $fullPath = '\\Elasticsearch\\Endpoints\\' . $class;
+                $fullPath = '\\BeynElasticsearch\\Endpoints\\' . $class;
                 if ($class === 'Bulk' || $class === 'Msearch' || $class === 'MsearchTemplate' || $class === 'MPercolate') {
                     return new $fullPath($serializer);
                 } else {
@@ -624,7 +624,7 @@ class ClientBuilder
     }
 
     /**
-     * @return \Elasticsearch\Connections\Connection[]
+     * @return \BeynElasticsearch\Connections\Connection[]
      * @throws RuntimeException
      */
     private function buildConnectionsFromHosts(array $hosts): array

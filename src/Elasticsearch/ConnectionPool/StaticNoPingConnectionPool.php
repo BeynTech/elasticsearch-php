@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\ConnectionPool;
+namespace BeynElasticsearch\ConnectionPool;
 
-use Elasticsearch\Common\Exceptions\NoNodesAvailableException;
-use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionInterface;
-use Elasticsearch\Connections\ConnectionFactoryInterface;
+use BeynElasticsearch\Common\Exceptions\NoNodesAvailableException;
+use BeynElasticsearch\ConnectionPool\Selectors\SelectorInterface;
+use BeynElasticsearch\Connections\Connection;
+use BeynElasticsearch\Connections\ConnectionInterface;
+use BeynElasticsearch\Connections\ConnectionFactoryInterface;
 
 class StaticNoPingConnectionPool extends AbstractConnectionPool implements ConnectionPoolInterface
 {

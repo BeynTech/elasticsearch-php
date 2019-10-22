@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace BeynElasticsearch\Namespaces;
 
 /**
  * Class IndicesNamespace
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\IndicesNamespace
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Namespaces\IndicesNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -43,7 +43,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Exists $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Exists $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Exists');
         $endpoint->setIndex($index);
@@ -80,7 +80,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Get');
         $endpoint->setIndex($index)
@@ -113,7 +113,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Segments $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Segments $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Segments');
         $endpoint->setIndex($index);
@@ -144,7 +144,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Template\Delete $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Template\Delete $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Template\Delete');
         $endpoint->setName($name);
@@ -178,7 +178,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Delete $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Delete $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Delete');
         $endpoint->setIndex($index);
@@ -220,7 +220,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Stats $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Stats $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Stats');
         $endpoint->setIndex($index)
@@ -260,7 +260,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Settings\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Settings\Put $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Settings\Put');
         $endpoint->setIndex($index)
@@ -298,7 +298,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Shrink $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Shrink $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Shrink');
         $endpoint->setIndex($index)
@@ -337,7 +337,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Mapping\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Mapping\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Mapping\Get');
         $endpoint->setIndex($index)
@@ -382,7 +382,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Mapping\GetField $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Mapping\GetField $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Mapping\GetField');
         $endpoint->setIndex($index)
@@ -419,7 +419,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Flush $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Flush $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Flush');
         $endpoint->setIndex($index);
@@ -451,7 +451,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Flush $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Flush $endpoint
 */
         $endpoint = $endpointBuilder('Indices\FlushSynced');
         $endpoint->setIndex($index);
@@ -484,7 +484,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Refresh $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Refresh $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Refresh');
         $endpoint->setIndex($index);
@@ -515,7 +515,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Flush $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Flush $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Recovery');
         $endpoint->setIndex($index);
@@ -552,7 +552,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Type\Exists $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Type\Exists $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Type\Exists');
         $endpoint->setIndex($index)
@@ -588,7 +588,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Alias\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Alias\Put $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Alias\Put');
         $endpoint->setIndex($index)
@@ -627,7 +627,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Template\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Template\Put $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Template\Put');
         $endpoint->setName($name)
@@ -673,7 +673,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Validate\Query $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Validate\Query $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Validate\Query');
         $endpoint->setIndex($index)
@@ -721,7 +721,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Alias\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Alias\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Alias\Get');
         $endpoint->setIndex($index)
@@ -761,7 +761,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Mapping\Put $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Mapping\Put $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Mapping\Put');
         $endpoint->setIndex($index)
@@ -796,7 +796,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Template\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Template\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Template\Get');
         $endpoint->setName($name);
@@ -830,7 +830,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Template\Exists $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Template\Exists $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Template\Exists');
         $endpoint->setName($name);
@@ -865,7 +865,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Create $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Create $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Create');
         $endpoint->setIndex($index)
@@ -901,7 +901,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\ForceMerge $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\ForceMerge $endpoint
 */
         $endpoint = $endpointBuilder('Indices\ForceMerge');
         $endpoint->setIndex($index);
@@ -934,7 +934,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Alias\Delete $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Alias\Delete $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Alias\Delete');
         $endpoint->setIndex($index)
@@ -970,7 +970,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Open $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Open $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Open');
         $endpoint->setIndex($index);
@@ -1003,7 +1003,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Analyze $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Analyze $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Analyze');
         $endpoint->setIndex($index)
@@ -1041,7 +1041,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Cache\Clear $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Cache\Clear $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Cache\Clear');
         $endpoint->setIndex($index);
@@ -1073,7 +1073,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Aliases\Update $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Aliases\Update $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Aliases\Update');
         $endpoint->setIndex($index)
@@ -1111,7 +1111,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Alias\Exists $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Alias\Exists $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Alias\Exists');
         $endpoint->setIndex($index)
@@ -1151,7 +1151,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Settings\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Settings\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Settings\Get');
         $endpoint->setIndex($index)
@@ -1187,7 +1187,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Close $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Close $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Close');
         $endpoint->setIndex($index);
@@ -1221,7 +1221,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Upgrade\Post $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Upgrade\Post $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Upgrade\Post');
         $endpoint->setIndex($index);
@@ -1253,7 +1253,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Upgrade\Get $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Upgrade\Get $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Upgrade\Get');
         $endpoint->setIndex($index);
@@ -1286,7 +1286,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\ShardStores $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\ShardStores $endpoint
 */
         $endpoint = $endpointBuilder('Indices\ShardStores');
         $endpoint->setIndex($index);
@@ -1324,7 +1324,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Rollover $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Rollover $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Rollover');
         $endpoint->setNewIndex($newIndex)
@@ -1363,7 +1363,7 @@ class IndicesNamespace extends AbstractNamespace
         $endpointBuilder = $this->endpoints;
 
         /**
- * @var \Elasticsearch\Endpoints\Indices\Split $endpoint
+ * @var \BeynElasticsearch\Endpoints\Indices\Split $endpoint
 */
         $endpoint = $endpointBuilder('Indices\Split');
         $endpoint->setIndex($index)

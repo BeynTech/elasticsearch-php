@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\Connections;
+namespace BeynElasticsearch\Tests\Connections;
 
-use Elasticsearch\Client;
-use Elasticsearch\ClientBuilder;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Serializers\SerializerInterface;
+use BeynElasticsearch\Client;
+use BeynElasticsearch\ClientBuilder;
+use BeynElasticsearch\Connections\Connection;
+use BeynElasticsearch\Serializers\SerializerInterface;
 use Psr\Log\LoggerInterface;
 
 class ConnectionTest extends \PHPUnit\Framework\TestCase

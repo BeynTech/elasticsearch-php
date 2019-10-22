@@ -2,20 +2,20 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Common\Exceptions\Serializer;
+namespace BeynElasticsearch\Common\Exceptions\Serializer;
 
-use Elasticsearch\Common\Exceptions\ElasticsearchException;
+use BeynElasticsearch\Common\Exceptions\BeynElasticsearchException;
 
 /**
  * Class JsonErrorException
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions\Curl
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Common\Exceptions\Curl
  * @author   Bez Hermoso <bezalelhermoso@gmail.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
  */
-class JsonErrorException extends \Exception implements ElasticsearchException
+class JsonErrorException extends \Exception implements BeynElasticsearchException
 {
     /**
      * @var mixed

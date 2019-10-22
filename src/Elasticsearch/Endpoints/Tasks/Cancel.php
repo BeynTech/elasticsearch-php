@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Tasks;
+namespace BeynElasticsearch\Endpoints\Tasks;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use BeynElasticsearch\Common\Exceptions;
+use BeynElasticsearch\Endpoints\AbstractEndpoint;
 
 /**
  * Class Cancel
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Tasks
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Tasks
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -21,7 +21,7 @@ class Cancel extends AbstractEndpoint
     private $taskId;
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \BeynElasticsearch\Common\Exceptions\InvalidArgumentException
      */
     public function setTaskId(?string $taskId): Cancel
     {
@@ -35,7 +35,7 @@ class Cancel extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \BeynElasticsearch\Common\Exceptions\RuntimeException
      */
     public function getURI(): string
     {

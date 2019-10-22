@@ -20,7 +20,7 @@ Thumbs.db
 #generator related
 generator/*
 
-# Elasticsearch related
+# BeynElasticsearch related
 util/elasticsearch/
 util/cache/
 util/output

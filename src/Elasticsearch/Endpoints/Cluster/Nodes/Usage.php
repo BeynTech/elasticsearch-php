@@ -2,13 +2,13 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Cluster\Nodes;
+namespace BeynElasticsearch\Endpoints\Cluster\Nodes;
 
 /**
  * Class Usage
  *
- * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster\Nodes
+ * @category BeynElasticsearch
+ * @package  BeynElasticsearch\Endpoints\Cluster\Nodes
  * @author   Enrico Zimuel <enrico.zimuel@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
